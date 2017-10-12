@@ -1,0 +1,1651 @@
+/*
+ * Licensed Materials - Property of IBM
+ * (C) Copyright IBM Corp. 2017. All Rights Reserved.
+ * US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+*/
+
+@charset "UTF-8";
+/*!
+ * Name: ibm.com v18 production file
+ * Release: 101.0.0
+ * Built: 2017-09-15 2:21:25 PM EDT
+ * Owner: Corporate Webmaster (NUS_N_NIWWW)
+ * Copyright (c) 2017 IBM Corporation
+ * Description: Official file for production use
+ */
+
+/*!
+ * Name: ibm.com v18 www CSS file
+ * Owner: Corporate Webmaster (NUS_N_NIWWW)
+ * Copyright (c) 2014 IBM Corporation
+ */
+
+.ibm-light {
+  font-weight: 300
+}
+
+.ibm-h1 {
+  font-size: 2.5rem;
+  line-height: 2.8125rem
+}
+
+.ibm-medium.ibm-h1 {
+  font-size: 3.125rem;
+  line-height: 3.4375rem
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-light.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-lightitalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-lightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regular.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regularitalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regularitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-medium.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-mediumitalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-mediumitalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibold.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibolditalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibolditalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-bold.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-bolditalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-light.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-lightitalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-lightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-regular.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-regularitalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-regularitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-medium.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-mediumitalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-mediumitalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-semibold.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-semibolditalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-semibolditalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-bold.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibm-plex-mono";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-bolditalic.woff2") format("woff2"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic
+}
+
+/*!
+	Do not attempt to copy, install or redistribute
+	these fonts.
+*/
+
+@font-face {
+  font-family: "icons-ibm-v10";
+  src: url("https://1.www.s81c.com/common/fonts/icons-ibm-v10.eot");
+  src: url("https://1.www.s81c.com/common/fonts/icons-ibm-v10.eot?#iefix") format("embedded-opentype"), url("https://1.www.s81c.com/common/fonts/icons-ibm-v10.woff") format("woff"), url("https://1.www.s81c.com/common/fonts/icons-ibm-v10.ttf") format("truetype"), url("https://1.www.s81c.com/common/fonts/icons-ibm-v10.svg#icons-ibm-v10") format("svg");
+  font-weight: normal;
+  font-style: normal
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "icons-ibm-v10";
+    src: url("https://1.www.s81c.com/common/fonts/icons-ibm-v10.svg#icons-ibm-v10") format("svg")
+  }
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: no-scroll transparent
+}
+
+html, body {
+  background: #ececec
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  direction: ltr
+}
+
+ol, ul {
+  border: 0;
+  vertical-align: baseline;
+  background: no-scroll transparent
+}
+
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, select, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, input, legend, table, caption, tbody, tfoot, thead, tr, th, td, textarea {
+  font-size: inherit
+}
+
+html, body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #323232
+}
+
+html .ibm-type, body .ibm-type {
+  font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif
+}
+
+strong, b {
+  font-weight: 600
+}
+
+code {
+  font-weight: normal;
+  font-size: .9375rem
+}
+
+.ibm-type code {
+  font-family: "ibm-plex-mono", "Menlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: normal;
+  padding: 0 0 15px
+}
+
+div {
+  font-size: 1rem
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  padding: 0 0 15px
+}
+
+a {
+  color: #3b6caa;
+  text-decoration: none
+}
+
+a::before, a::after {
+  text-decoration: underline
+}
+
+a::before, a::after {
+  text-decoration: none
+}
+
+.ibm-center {
+  text-align: center
+}
+
+.ibm-padding-bottom-0 {
+  padding-bottom: 0!important
+}
+
+@media projection {
+  body {
+    color: #000
+  }
+}
+
+[data-icon]::before, [class*='-link']::before, .select2-container--default .select2-selection--single .select2-selection__arrow b:before, .ibm-icon-after::after, #ibm-parent-link a::before, #ibm-navigation-trail li::after, .ibm-bullet::before, .ibm-close::before, #ibm-home a:before, .ibm-show-hide>h2 a::before, .ibm-sitenav-menu-list>ul>li.ibm-haschildlist>button::before, .ibm-sitenav-menu-list>ul>li.ibm-haschildlist>span::before, .ibm-sitenav-menu-list>ul>li.ibm-haschildlist>a::before, .ibm-step-indicator .ibm-tabs li::after, ul.ibm-twisty>li a.ibm-twisty-trigger::before {
+  display: inline-block;
+  font-family: "icons-ibm-v10";
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  left: -1px;
+  position: absolute;
+  text-decoration: none;
+  speak: none;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased
+}
+
+#ibm-mast-options li::before, #ibm-universal-nav li::before, #ibm-category-nav li::before, .ibm-tab-overlay ul li::before, #ibm-common-menu .ibm-menu-subtabs li::before, #ibm-navigation-trail li::before, #ibm-primary-links>li::before, .ibm-share-this li::before, .ibm-link-list li::before, #ibm-top .ibm-link-list li.ibm-link-description::before, #ibm-top .ibm-link-list li.ibm-chevron-link::before, #ibm-top .ibm-link-list li.ibm-chevron-alternate-link::before, .ibm-live-assistance-list li::before, .ibm-twisty>li::before, .ibm-portrait-module-list>li::before, ul.ibm-tabs li::before, .ibm-table-navigation li::before, .ibm-table-navigation a::before, #ibm-footer-module li::before, #ibm-footer li::before {
+  display: none
+}
+
+.ibm-btn-row [class*='-link'] {
+  position: relative;
+  padding-left: 35px;
+  padding-top: 9px
+}
+
+.ibm-center-block {
+  margin: 0 auto!important;
+  float: none!important
+}
+
+.ibm-center-position {
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0px, 0px);
+  -moz-transform: translate3d(-50%, 0px, 0px);
+  -o-transform: translate3d(-50%, 0px, 0px);
+  -ms-transform: translate3d(-50%, 0px, 0px);
+  transform: translate3d(-50%, 0px, 0px)
+}
+
+.ibm-circle {
+  border-radius: 50%
+}
+
+.ibm-band {
+  background-color: #f9f9f9;
+  padding: 20px 0
+}
+
+#ibm-com ul.ibm-tabs li {
+  clear: none
+}
+
+#ibm-content-main .ibm-container .ibm-container-body ul.ibm-stock-list, #ibm-content-main .ibm-columns ul.ibm-stock-list {
+  margin: 0;
+  padding: 10px 0
+}
+
+#ibm-content-main .ibm-container .ibm-container-body ul.ibm-stock-list li, #ibm-content-main .ibm-columns ul.ibm-stock-list li {
+  clear: both;
+  padding: 0;
+  margin: 0;
+  display: block;
+  height: 1%
+}
+
+#ibm-content-main .ibm-container .ibm-container-body ul.ibm-stock-list h3, #ibm-content-main .ibm-columns ul.ibm-stock-list h3 {
+  margin: 0;
+  padding: 0 0 3px;
+  float: left
+}
+
+#ibm-content-main .ibm-container .ibm-container-body ul.ibm-stock-list p, #ibm-content-main .ibm-columns ul.ibm-stock-list p {
+  padding: 0 0 3px!important;
+  height: 1%;
+  float: right
+}
+
+#ibm-content-main .ibm-container .ibm-container-body dl {
+  margin: 0;
+  padding: 5px
+}
+
+.ibm-canada-notice {
+  background: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  transition: all .25s;
+  transform: translate3d(0, 100%, 0);
+  width: 100%;
+  z-index: 9999
+}
+
+.ibm-card {
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  position: relative
+}
+
+.ibm-card__heading, .ibm-card__content {
+  padding: 20px
+}
+
+.ibm-card__bottom {
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 20px
+}
+
+@media only screen and (min-width:0) and (max-width:579px) {
+  #ibm-footer .ibm-textcolumns-small-2 li {
+    padding-bottom: 0
+  }
+}
+
+#ibm-footer.ibm-alternate .ibm-col-1-1, #ibm-footer.ibm-alternate .ibm-col-12-12 {
+  padding-top: 8px;
+  padding-bottom: 40px
+}
+
+#ibm-footer.ibm-alternate.ibm-padding-normal .ibm-col-1-1, #ibm-footer.ibm-alternate.ibm-padding-normal .ibm-col-12-12 {
+  padding-bottom: 8px
+}
+
+.ibm-columns {
+  clear: both;
+  margin: 0 auto;
+  width: 980px;
+  padding: 0 10px 10px
+}
+
+.ibm-columns::after {
+  clear: both;
+  content: ' ';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden
+}
+
+.ibm-columns .ibm-columns {
+  margin: 0 -10px;
+  padding: 0;
+  width: auto
+}
+
+.ibm-default .ibm-columns {
+  padding-left: 0
+}
+
+.ibm-default #ibm-footer-module .ibm-columns, .ibm-default #ibm-footer .ibm-columns {
+  padding-left: 10px
+}
+
+#ibm-secondary-navigation h2 {
+  font-weight: 600;
+  padding-bottom: 10px
+}
+
+@media only screen and (max-width:999px) {
+  .ibm-localpagen10n .ibm-localpagen10n-buttons {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px
+  }
+}
+
+#ibm-masthead {
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  z-index: 900
+}
+
+#ibm-universal-nav {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  height: 50px;
+  position: relative;
+  z-index: 2
+}
+
+#ibm-home {
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+  position: relative
+}
+
+#ibm-home a {
+  box-sizing: border-box;
+  display: block;
+  height: 50px;
+  text-indent: -999px;
+  width: 60px
+}
+
+.ibm-ibmlogo-link::before, #ibm-home a:before {
+  content: "\f137"
+}
+
+#ibm-home a:before {
+  color: #000;
+  font-size: 60px;
+  line-height: 65px;
+  text-indent: 0;
+  top: 10px
+}
+
+@media print {
+  .ibm-mobile {
+    display: none!important
+  }
+  #ibm-masthead {
+    border: 0 none!important
+  }
+  #ibm-content, #ibm-content-main, #ibm-pcon, #ibm-leadspace-head #ibm-leadspace-body {
+    float: none;
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin: 0
+  }
+  #ibm-top {
+    float: none;
+    clear: both;
+    width: 100%;
+    padding: 40px 0 0;
+    margin: 0;
+    font-size: 1.125em
+  }
+  #ibm-content-nav {
+    margin-top: 0
+  }
+  .ibm-twisty-body, .ibm-hideable, .ibm-container.ibm-show-hide .ibm-container-body {
+    display: block!important;
+    height: auto!important
+  }
+  .ibm-columns .ibm-col-2-1 {
+    width: 47.5%!important
+  }
+  #ibm-content-nav #ibm-primary-tabs {
+    background: 0;
+    border-bottom: 1px solid #000
+  }
+  #ibm-leadspace-head {
+    background: 0;
+    border-bottom: 0
+  }
+  #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
+    background: 0
+  }
+  #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0
+  }
+  #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000
+  }
+  table.ibm-data-table caption, table.ibm-results-table caption {
+    border-top: 2px solid #333
+  }
+  #ibm-related-content {
+    margin-top: 20px!important;
+    border-top: 2px solid #333
+  }
+  table.ibm-data-table td, table.ibm-data-table th {
+    border-top: 1px solid #eee
+  }
+  #ibm-mast-options, #ibm-universal-nav, #ibm-navigation, #ibm-common-menu, #ibm-footer-module, #ibm-footer, .ibm-no-print {
+    display: none!important
+  }
+  #ibm-leadspace-body #ibm-navigation-trail li a {
+    display: block!important;
+    color: #000!important;
+    opacity: 1!important
+  }
+  html, body {
+    background: #fff!important
+  }
+  #ibm-pcon .ibm-columns {
+    overflow: visible
+  }
+}
+
+br[class*="ibm-br-"] {
+  display: none
+}
+
+[class*='ibm-col-'] {
+  width: 100%
+}
+
+@media only screen and (min-width:1240px) {
+  .ibm-show-small, .ibm-show-medium, .ibm-show-large {
+    display: none!important
+  }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1239px) {
+  .ibm-show-small, .ibm-show-medium, .ibm-show-xlarge {
+    display: none!important
+  }
+}
+
+@media only screen and (min-width:580px) and (max-width:999px) {
+  .ibm-show-small, .ibm-show-large, .ibm-show-xlarge {
+    display: none!important
+  }
+}
+
+@media only screen and (min-width:0) and (max-width:579px) {
+  .ibm-show-medium, .ibm-show-large, .ibm-show-xlarge {
+    display: none!important
+  }
+}
+
+@media only screen and (min-width:1480px) {
+  #ibm-pcon {
+    padding: 0;
+    min-width: 1440px
+  }
+  .ibm-default #ibm-pcon {
+    min-width: 1240px;
+    padding: 0 0 0 180px;
+    width: 1240px
+  }
+  .ibm-default .ibm-columns {
+    width: 1250px
+  }
+  .ibm-columns, #ibm-footer .ibm-columns, #ibm-footer-contact .ibm-columns, #ibm-footer-module .ibm-columns, #ibm-megamenu-sections .ibm-columns, #ibm-related-content .ibm-columns {
+    width: 1440px
+  }
+  #ibm-leadspace-body {
+    width: 1460px
+  }
+  .ibm-default #ibm-leadspace-body {
+    width: auto
+  }
+  #ibm-footer>ul, #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs, #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
+    width: 1420px
+  }
+}
+
+@media only screen and (min-width:1240px) and (max-width:1479px) {
+  #ibm-pcon {
+    padding: 0;
+    min-width: 1200px
+  }
+  .ibm-default #ibm-pcon {
+    min-width: 1000px;
+    padding: 0 0 0 180px;
+    width: 1000px
+  }
+  .ibm-default .ibm-columns {
+    width: 1010px
+  }
+  .ibm-columns, #ibm-footer .ibm-columns, #ibm-footer-contact .ibm-columns, #ibm-footer-module .ibm-columns, #ibm-megamenu-sections .ibm-columns, #ibm-related-content .ibm-columns {
+    width: 1200px
+  }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1239px) {
+  #ibm-pcon {
+    padding: 0;
+    min-width: 960px
+  }
+  .ibm-default #ibm-pcon {
+    min-width: 760px;
+    padding: 0 0 0 180px;
+    width: 760px
+  }
+  .ibm-default .ibm-columns {
+    width: 770px
+  }
+  .ibm-columns, #ibm-footer .ibm-columns, #ibm-footer-contact .ibm-columns, #ibm-footer-module .ibm-columns, #ibm-megamenu-sections .ibm-columns, #ibm-related-content .ibm-columns {
+    width: 960px
+  }
+  #ibm-leadspace-body {
+    width: 980px
+  }
+  .ibm-default #ibm-leadspace-body {
+    width: auto
+  }
+  #ibm-footer>ul, #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs, #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
+    width: 940px
+  }
+  .ibm-col-1-1 {
+    width: 960px
+  }
+  .ibm-col-2-1 {
+    width: 480px
+  }
+  .ibm-col-4-1 {
+    width: 240px
+  }
+  .ibm-col-4-2, .ibm-col-6-3 {
+    width: 480px
+  }
+  .ibm-col-4-3 {
+    width: 720px
+  }
+  .ibm-default .ibm-col-5-1 {
+    width: 192.5px
+  }
+  .ibm-default .ibm-col-5-2 {
+    width: 385px
+  }
+  .ibm-default .ibm-col-5-3 {
+    width: 577.5px
+  }
+  .ibm-default .ibm-col-5-4, .ibm-default .ibm-col-1-1 {
+    width: 770px
+  }
+  .ibm-default #ibm-footer .ibm-col-1-1, .ibm-default #ibm-footer-module .ibm-col-1-1 {
+    width: 960px
+  }
+  .ibm-col-5-1 {
+    width: 192px
+  }
+  .ibm-col-5-2 {
+    width: 384px
+  }
+  .ibm-col-5-3 {
+    width: 576px
+  }
+  .ibm-col-5-4 {
+    width: 768px
+  }
+  .ibm-col-6-1 {
+    width: 160px
+  }
+  .ibm-col-6-2 {
+    width: 320px
+  }
+  .ibm-col-6-4 {
+    width: 640px
+  }
+  .ibm-col-6-5 {
+    width: 800px
+  }
+  .ibm-col-large-1-1 {
+    width: 960px
+  }
+  .ibm-col-large-2-1 {
+    width: 480px
+  }
+  .ibm-col-large-4-1 {
+    width: 240px
+  }
+  .ibm-col-large-4-2, .ibm-col-large-6-3 {
+    width: 480px
+  }
+  .ibm-col-large-4-3 {
+    width: 720px
+  }
+  .ibm-default .ibm-col-large-5-1 {
+    width: 192.5px
+  }
+  .ibm-default .ibm-col-large-5-2 {
+    width: 385px
+  }
+  .ibm-default .ibm-col-large-5-3 {
+    width: 577.5px
+  }
+  .ibm-default .ibm-col-large-5-4, .ibm-default .ibm-col-1-1 {
+    width: 770px
+  }
+  .ibm-default #ibm-footer .ibm-col-1-1, .ibm-default #ibm-footer-module .ibm-col-1-1 {
+    width: 960px
+  }
+  .ibm-col-large-5-1 {
+    width: 192px
+  }
+  .ibm-col-large-5-2 {
+    width: 384px
+  }
+  .ibm-col-large-5-3 {
+    width: 576px
+  }
+  .ibm-col-large-5-4 {
+    width: 768px
+  }
+  .ibm-col-large-6-1 {
+    width: 160px
+  }
+  .ibm-col-large-6-2 {
+    width: 320px
+  }
+  .ibm-col-large-6-4 {
+    width: 640px
+  }
+  .ibm-col-large-6-5 {
+    width: 800px
+  }
+  .ibm-hidden-large {
+    display: none!important
+  }
+  .ibm-hidden-bg-large {
+    background-image: none!important
+  }
+  br.ibm-br-large {
+    display: block
+  }
+  .ibm-h1-large {
+    font-size: 2.5rem!important;
+    line-height: 2.8125rem!important
+  }
+  .ibm-h1-large.ibm-medium {
+    font-size: 3.125rem;
+    line-height: 3.4375rem
+  }
+  .ibm-h1-large.ibm-large {
+    font-size: 3.75rem;
+    line-height: 4.0625rem
+  }
+  .ibm-h2-large {
+    font-size: 1.875rem;
+    line-height: 2.1875rem
+  }
+  .ibm-h3-large {
+    font-size: 1.5625rem;
+    line-height: 1.875rem
+  }
+  .ibm-h4-large {
+    font-size: 1.25rem;
+    line-height: 1.5625rem
+  }
+  .ibm-fontsize-body-large {
+    font-size: 1rem;
+    line-height: 1.625rem
+  }
+  .ibm-small-large {
+    font-size: .875rem;
+    line-height: 1.5rem
+  }
+}
+
+@media only screen and (min-width:760px) and (max-width:999px) {
+  #ibm-pcon {
+    padding: 0;
+    min-width: 720px
+  }
+  .ibm-default #ibm-pcon {
+    min-width: 520px;
+    padding: 0 0 0 180px;
+    width: 520px
+  }
+  .ibm-default .ibm-columns {
+    width: 530px
+  }
+  .ibm-columns, #ibm-footer .ibm-columns, #ibm-footer-contact .ibm-columns, #ibm-footer-module .ibm-columns, #ibm-megamenu-sections .ibm-columns, #ibm-related-content .ibm-columns {
+    width: 720px
+  }
+  #ibm-leadspace-body {
+    width: 740px
+  }
+  .ibm-default #ibm-leadspace-body {
+    width: auto
+  }
+  #ibm-footer>ul, #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs, #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
+    width: 700px
+  }
+  .ibm-col-1-1 {
+    width: 720px
+  }
+  .ibm-col-2-1 {
+    width: 360px
+  }
+  .ibm-col-4-1 {
+    width: 180px
+  }
+  .ibm-col-4-2, .ibm-col-6-3 {
+    width: 360px
+  }
+  .ibm-col-4-3 {
+    width: 540px
+  }
+  .ibm-default .ibm-col-5-1 {
+    width: 132.5px
+  }
+  .ibm-default .ibm-col-5-2 {
+    width: 265px
+  }
+  .ibm-default .ibm-col-5-3 {
+    width: 397.5px
+  }
+  .ibm-default .ibm-col-5-4, .ibm-default .ibm-col-1-1 {
+    width: 530px
+  }
+  .ibm-default #ibm-footer .ibm-col-1-1, .ibm-default #ibm-footer-module .ibm-col-1-1 {
+    width: 720px
+  }
+  .ibm-col-5-1 {
+    width: 144px
+  }
+  .ibm-col-5-2 {
+    width: 288px
+  }
+  .ibm-col-5-3 {
+    width: 432px
+  }
+  .ibm-col-5-4 {
+    width: 576px
+  }
+  .ibm-col-6-1 {
+    width: 120px
+  }
+  .ibm-col-6-2 {
+    width: 240px
+  }
+  .ibm-col-6-4 {
+    width: 480px
+  }
+  .ibm-col-6-5 {
+    width: 600px
+  }
+  .ibm-col-medium-1-1 {
+    width: 720px
+  }
+  .ibm-col-medium-2-1 {
+    width: 360px
+  }
+  .ibm-col-medium-4-1 {
+    width: 180px
+  }
+  .ibm-col-medium-4-2, .ibm-col-medium-6-3 {
+    width: 360px
+  }
+  .ibm-col-medium-4-3 {
+    width: 540px
+  }
+  .ibm-default .ibm-col-medium-5-1 {
+    width: 132.5px
+  }
+  .ibm-default .ibm-col-medium-5-2 {
+    width: 265px
+  }
+  .ibm-default .ibm-col-medium-5-3 {
+    width: 397.5px
+  }
+  .ibm-default .ibm-col-medium-5-4, .ibm-default .ibm-col-1-1 {
+    width: 530px
+  }
+  .ibm-default #ibm-footer .ibm-col-1-1, .ibm-default #ibm-footer-module .ibm-col-1-1 {
+    width: 720px
+  }
+  .ibm-col-medium-5-1 {
+    width: 144px
+  }
+  .ibm-col-medium-5-2 {
+    width: 288px
+  }
+  .ibm-col-medium-5-3 {
+    width: 432px
+  }
+  .ibm-col-medium-5-4 {
+    width: 576px
+  }
+  .ibm-col-medium-6-1 {
+    width: 120px
+  }
+  .ibm-col-medium-6-2 {
+    width: 240px
+  }
+  .ibm-col-medium-6-4 {
+    width: 480px
+  }
+  .ibm-col-medium-6-5 {
+    width: 600px
+  }
+  .ibm-hidden-medium {
+    display: none!important
+  }
+  .ibm-hidden-bg-medium {
+    background-image: none!important
+  }
+  br.ibm-br-medium {
+    display: block
+  }
+  .ibm-h1-medium {
+    font-size: 2.5rem!important;
+    line-height: 2.8125rem!important
+  }
+  .ibm-h1-medium.ibm-medium {
+    font-size: 3.125rem;
+    line-height: 3.4375rem
+  }
+  .ibm-h1-medium.ibm-large {
+    font-size: 3.75rem;
+    line-height: 4.0625rem
+  }
+  .ibm-h2-medium {
+    font-size: 1.875rem;
+    line-height: 2.1875rem
+  }
+  .ibm-h3-medium {
+    font-size: 1.5625rem;
+    line-height: 1.875rem
+  }
+  .ibm-h4-medium {
+    font-size: 1.25rem;
+    line-height: 1.5625rem
+  }
+  .ibm-fontsize-body-medium {
+    font-size: 1rem;
+    line-height: 1.625rem
+  }
+  .ibm-small-medium {
+    font-size: .875rem;
+    line-height: 1.5rem
+  }
+}
+
+@media only screen and (min-width:580px) and (max-width:759px) {
+  #ibm-pcon {
+    padding: 0;
+    min-width: 540px
+  }
+  .ibm-default #ibm-pcon {
+    min-width: 340px;
+    padding: 0 0 0 180px;
+    width: 340px
+  }
+  .ibm-default .ibm-columns {
+    width: 350px
+  }
+  .ibm-columns, #ibm-footer .ibm-columns, #ibm-footer-contact .ibm-columns, #ibm-footer-module .ibm-columns, #ibm-megamenu-sections .ibm-columns, #ibm-related-content .ibm-columns {
+    width: 540px
+  }
+  #ibm-leadspace-body {
+    width: 560px
+  }
+  .ibm-default #ibm-leadspace-body {
+    width: auto
+  }
+  #ibm-footer>ul, #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs, #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
+    width: 520px
+  }
+  .ibm-col-1-1 {
+    width: 540px
+  }
+  .ibm-col-2-1 {
+    width: 270px
+  }
+  .ibm-col-4-1 {
+    width: 135px
+  }
+  .ibm-col-4-2, .ibm-col-6-3 {
+    width: 270px
+  }
+  .ibm-col-4-3 {
+    width: 405px
+  }
+  .ibm-default .ibm-col-5-1 {
+    width: 87.5px
+  }
+  .ibm-default .ibm-col-5-2 {
+    width: 175px
+  }
+  .ibm-default .ibm-col-5-3 {
+    width: 262.5px
+  }
+  .ibm-default .ibm-col-5-4, .ibm-default .ibm-col-1-1 {
+    width: 350px
+  }
+  .ibm-default #ibm-footer .ibm-col-1-1, .ibm-default #ibm-footer-module .ibm-col-1-1 {
+    width: 540px
+  }
+  .ibm-col-5-1 {
+    width: 108px
+  }
+  .ibm-col-5-2 {
+    width: 216px
+  }
+  .ibm-col-5-3 {
+    width: 324px
+  }
+  .ibm-col-5-4 {
+    width: 432px
+  }
+  .ibm-col-6-1 {
+    width: 90px
+  }
+  .ibm-col-6-2 {
+    width: 180px
+  }
+  .ibm-col-6-4 {
+    width: 360px
+  }
+  .ibm-col-6-5 {
+    width: 450px
+  }
+  .ibm-col-medium-1-1 {
+    width: 540px
+  }
+  .ibm-col-medium-2-1 {
+    width: 270px
+  }
+  .ibm-col-medium-4-1 {
+    width: 135px
+  }
+  .ibm-col-medium-4-2, .ibm-col-medium-6-3 {
+    width: 270px
+  }
+  .ibm-col-medium-4-3 {
+    width: 405px
+  }
+  .ibm-default .ibm-col-medium-5-1 {
+    width: 87.5px
+  }
+  .ibm-default .ibm-col-medium-5-2 {
+    width: 175px
+  }
+  .ibm-default .ibm-col-medium-5-3 {
+    width: 262.5px
+  }
+  .ibm-default .ibm-col-medium-5-4, .ibm-default .ibm-col-1-1 {
+    width: 350px
+  }
+  .ibm-default #ibm-footer .ibm-col-1-1, .ibm-default #ibm-footer-module .ibm-col-1-1 {
+    width: 540px
+  }
+  .ibm-col-medium-5-1 {
+    width: 108px
+  }
+  .ibm-col-medium-5-2 {
+    width: 216px
+  }
+  .ibm-col-medium-5-3 {
+    width: 324px
+  }
+  .ibm-col-medium-5-4 {
+    width: 432px
+  }
+  .ibm-col-medium-6-1 {
+    width: 90px
+  }
+  .ibm-col-medium-6-2 {
+    width: 180px
+  }
+  .ibm-col-medium-6-4 {
+    width: 360px
+  }
+  .ibm-col-medium-6-5 {
+    width: 450px
+  }
+  .ibm-hidden-medium {
+    display: none!important
+  }
+  .ibm-hidden-bg-medium {
+    background-image: none!important
+  }
+  br.ibm-br-medium {
+    display: block
+  }
+  .ibm-h1-medium {
+    font-size: 2.5rem!important;
+    line-height: 2.8125rem!important
+  }
+  .ibm-h1-medium.ibm-medium {
+    font-size: 3.125rem;
+    line-height: 3.4375rem
+  }
+  .ibm-h1-medium.ibm-large {
+    font-size: 3.75rem;
+    line-height: 4.0625rem
+  }
+  .ibm-h2-medium {
+    font-size: 1.875rem;
+    line-height: 2.1875rem
+  }
+  .ibm-h3-medium {
+    font-size: 1.5625rem;
+    line-height: 1.875rem
+  }
+  .ibm-h4-medium {
+    font-size: 1.25rem;
+    line-height: 1.5625rem
+  }
+  .ibm-fontsize-body-medium {
+    font-size: 1rem;
+    line-height: 1.625rem
+  }
+  .ibm-small-medium {
+    font-size: .875rem;
+    line-height: 1.5rem
+  }
+}
+
+@media only screen and (min-width:0) and (max-width:579px) {
+  #ibm-com.ibm-no-scroll #ibm-content-wrapper, #ibm-com.ibm-no-scroll .ibm-sitenav-menu-container {
+    margin-left: 0
+  }
+  .ibm-hidden-small {
+    display: none!important
+  }
+  .ibm-hidden-bg-small {
+    background-image: none!important
+  }
+  br.ibm-br-small {
+    display: block
+  }
+  .ibm-h1-small {
+    font-size: 2.5rem!important;
+    line-height: 2.8125rem!important
+  }
+  .ibm-h1-small.ibm-medium {
+    font-size: 3.125rem;
+    line-height: 3.4375rem
+  }
+  .ibm-h1-small.ibm-large {
+    font-size: 3.75rem;
+    line-height: 4.0625rem
+  }
+  .ibm-h2-small {
+    font-size: 1.875rem;
+    line-height: 2.1875rem
+  }
+  .ibm-h3-small {
+    font-size: 1.5625rem;
+    line-height: 1.875rem
+  }
+  .ibm-h4-small {
+    font-size: 1.25rem;
+    line-height: 1.5625rem
+  }
+  .ibm-fontsize-body-small {
+    font-size: 1rem;
+    line-height: 1.625rem
+  }
+  .ibm-small-small {
+    font-size: .875rem;
+    line-height: 1.5rem
+  }
+  .ibm-no-mobile {
+    display: none
+  }
+  #ibm-top, #ibm-pcon {
+    min-width: 100%
+  }
+  .ibm-default #ibm-navigation-trail {
+    padding-left: 20px
+  }
+  #ibm-leadspace-body {
+    width: auto
+  }
+  #ibm-content-nav #ibm-primary-tabs .ibm-tabs, #ibm-content-nav #ibm-secondary-tabs .ibm-tabs {
+    width: auto
+  }
+  #ibm-footer ul, .ibm-columns {
+    min-width: 260px;
+    width: auto
+  }
+  .ibm-col-small-2-1 {
+    width: 50%
+  }
+}
+
+.ibm-columns.ibm-seamless {
+  box-sizing: border-box
+}
+
+.ibm-alternate-background {
+  color: #fff
+}
+
+.cf:after, .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 1239px) and (min-width: 1000px) {
+  .content-area-restricted {
+    width: 960px;
+  }
+}
+
+@media only screen and (max-width: 1479px) and (min-width: 1240px) {
+  .content-area-restricted {
+    width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  .content-area-restricted {
+    width: 1440px;
+  }
+}
+
+.ibm-com {
+  /* special text styles */
+}
+
+.ibm-com h2, .ibm-com .pn-h2 {
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+  font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.ibm-com h3, .ibm-com .pn-h3 {
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* tabs */
+
+.ibm-tabs-content {
+  outline: none;
+}
+
+.ibm-graphic-tabs ul.ibm-tabs li a {
+  /*border-bottom: 0;
+    display: block;
+    line-height: 1.2;
+    padding: 25px 10px 28px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;*/
+}
+
+.ibm-graphic-tabs ul.ibm-tabs li a:before {
+  position: relative;
+  top: -2px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 15px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* GRID CREATION FUNCTION */
+
+.pn-column {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+}
+
+/*  SECTIONS  */
+
+.pn-columns {
+  clear: both;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.pn-columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pn-columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pn-columns [class*="pn-col-"] {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  margin: 1% 0;
+  width: 100%;
+}
+
+.pn-col .embed-youtube iframe {
+  max-width: 100%;
+}
+
+/* ------------------------------------------------------------
+  Tablet and higher
+------------------------------------------------------------ */
+
+@media screen and (min-width: 768px) {
+  .pn-col-12-12 {
+    width: 100% !important;
+    margin: 0 2% 2% 0 !important;
+  }
+  .pn-columns.pn-masonry .pn-col-12-12 {
+    width: 98% !important;
+  }
+  .pn-col-12-11 {
+    width: 91.5% !important;
+    margin: 0 2% 2% 0 !important;
+  }
+  #navbar ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-style: none !important;
+  }
+  #navbar li {
+    float: left;
+    border-style: none !important;
+  }
+  #navbar li a {
+    display: block;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #navbar li a:hover {
+    background-color: #111;
+  }
+  .content-main-header {
+    margin: 1%;
+  }
+  .content-main-header {
+    color: #3d70b2;
+    padding-top: 0;
+    font-family: 'IBM Helvetica', "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 1.3;
+  }
+  .doc-content-header {
+    font-size: 24px;
+    color: #3d70b2;
+    margin-bottom: 1%;
+  }
+  .doc-content-details {
+    margin: .5rem 0 1rem;
+    font-size: .875rem;
+    color: #2d3f49;
+    font-family: 'IBM Helvetica', "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 1.65;
+  }
+  .doc-content-details-left {
+    float: left;
+    margin: .5rem 0 1rem;
+    font-size: .875rem;
+    color: #2d3f49;
+    font-family: 'IBM Helvetica', "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 1.65;
+    border-style: solid;
+    border-width: 1px;
+    width: 25%;
+    height: 500px;
+  }
+  .doc-content-details-right {
+    float: right;
+    margin: .5rem 0 1rem;
+    font-size: .875rem;
+    color: #2d3f49;
+    font-family: 'IBM Helvetica', "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 1.65;
+    border-style: solid;
+    border-width: 1px;
+    width: 74%;
+    height: 500px;
+  }
+  .content-section {
+    padding: 1%;
+    margin: 1%;
+  }
+  .link-text {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.monitoring-pic {
+  width: 1024px;
+  height: 500px;
+}
+
+.prom-pic {
+  width: 1024px;
+  height: 700px;
+}
+
+.ibm-type code {
+  font-family: "ibm-plex-mono", "footerMenlo", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Courier, monospace;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+code, kbd, pre, samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+code {
+  font-weight: normal;
+  font-size: .9375rem;
+}
+
+.big-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+
+.topic-content {
+  padding: 7px;
+  font-style: italic;
+  color: rgb(50, 50, 50);
+  font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.deploy-pic {
+  float: right;
+  max-width: 100%;
+  height: auto;
+  /* Thanks https://stackoverflow.com/questions/16217355/automatically-resize-images-with-browser-size-using-css */
+  width: auto\9;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.deploy-pic img {
+  height: 280px;
+  width: 600px;
+}
+
+#doc-content-header {
+  font-size: 24px;
+  color: #3d70b2 !important;
+  margin-bottom: 1%;
+}
+
+#doc-content-header strong {
+  color: #3d70b2;
+}
+
+.deploy_method {
+  margin: 10px;
+  padding: 10px;
+}
+
+.ibm-fluid {
+  margin: 0 auto;
+  max-width: 1460px;
+  padding: 0 10px 10px
+}
+
+.ibm-fluid .ibm-fluid {
+  margin-left: -10px;
+  margin-right: -10px
+}
+
+.ibm-fluid, .ibm-fluid [class*=ibm-col-] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.ibm-fluid::after, .ibm-fluid [class*=ibm-col-]::after {
+  content: '';
+  display: table;
+  clear: both
+}
+
+@media(min-width:580px) {
+  .ibm-fluid [class*=ibm-col-] {
+    float: left
+  }
+  .ibm-fluid .ibm-fluid {
+    padding: 0;
+    width: calc(100%+20px)
+  }
+}
+
+.ibm-fluid.ibm-seamless {
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+.ibm-fluid.ibm-seamless .ibm-fluid {
+  max-width: 100%;
+  padding: 0;
+  width: 100%
+}
+
+.ibm-fluid.ibm-seamless [class*=ibm-col-] {
+  padding: 0
+}
+
+.ibm-fluid.ibm-fullwidth {
+  max-width: 100%;
+  width: 100%
+}
+
+.ibm-fluid.ibm-fullwidth.ibm-seamless {
+  padding: 0
+}
+
+.ibm-fluid.ibm-seamless .ibm-fluid:not(.ibm-seamless), .ibm-fluid:not(.ibm-seamless) .ibm-fluid.ibm-seamless {
+  margin: 0 auto
+}
+
+.ibm-fluid:not(.ibm-seamless) .ibm-fluid.ibm-seamless {
+  padding: 0
+}
+
+.ibm-fluid [class*=ibm-col-] {
+  margin: 0;
+  padding: 0 10px;
+  min-height: 1px
+}
+
+.ibm-col-small-12-6 {
+  float: left;
+  width: 50%
+}
+
+@media(min-width:580px) {
+  .ibm-col-12-4 {
+    width: 33.3333333333%
+  }
+}
+
+#ibm-leadspace-head #ibm-leadspace-body {
+  float: none;
+  clear: both;
+  width: 100%;
+  padding: 0;
+  margin: 0
+}
+
+.ibm-landing-page {
+  background-color: white;
+}
+
+#ibm-columns {
+  background-color: white;
+}

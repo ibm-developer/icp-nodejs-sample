@@ -1,0 +1,108 @@
+<!--
+  Licensed Materials - Property of IBM
+  (C) Copyright IBM Corp. 2017. All Rights Reserved.
+  US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="//www.ibm.com/favicon.ico" />
+  <title>Deploying to IBM Cloud Private</title>
+  <% include partials/header %>
+  <link rel='stylesheet' href='css/asciinema-player.css' type='text/css' media='all' />
+</head>
+
+<body id="ibm-com" class="home page-template page-template-page-brochureware page-template-page-brochureware-php page page-id-26 logged-in admin-bar no-customize-support ibm-com ibm-type group-blog">
+  <div id="ibm-top" class="ibm-landing-page">
+      <% include partials/navbar %>
+        <div class="ibm-columns section-padding">
+
+          <div class="content-section">
+            <div id="doc-content-header">
+              How was this application <strong>deployed</strong>?
+            </div>
+
+            <div id="ibm-content-wrapper">
+              <div class="content-area" id="content-area">
+                <div class="entry-content">
+
+                  <div class="contents">
+
+                    <div class="deploy_method">
+                      <strong>IBM Cloud Developer Tools</strong>
+                      <div class="deploy-pic">
+                        <asciinema-player src="images/idt.json" cols="80" rows="16" autoplay="1" loop="1"></asciinema-player>
+                        <script src="js/asciinema-player.js"></script>
+                      </div>
+
+                      <div class="topic-content">
+                        This deployment method was used for this sample.
+                      </div>
+                      <ul>
+                        <li><code>idt deploy -t container --deploy-image-target mycluster.icp:8500/default/nodejs-sample</code></li>
+                        <p>In the example above, mycluster.icp:8500 refers to the private image registry, and an entry in <code>/etc/hosts</code> is present</p>
+                        <li>Runs on Windows, Linux, macOS</li>
+                        <li>One install command, various useful plugins</li>
+                      </ul>
+                      <p>Find out more at our
+                        <a href="https://console.bluemix.net/docs/cloudnative/dev_cli.html#developercli">IBM Cloud Developer Tools docs.</a>
+                      </p>
+                    </div>
+                    </br>
+
+                    <div class="deploy_method">
+                      <strong>Alternative: Microservice Builder</strong>
+                      <div class="deploy-pic">
+                        <img src="images/msb.png" alt="Microservice Builder in the catalog">
+                      </div>
+
+                      <div class="topic-content">
+                        Available with IBM Cloud Private.
+                      </div>
+                      <ul>
+                        <li>Focus on writing and committing code</li>
+                        <li>Simplified deployment process</li>
+                        <li>Set up an org, deploy the pipeline to watch said org, auto deploy on Git commit</li>
+                      </ul>
+                      <p>Find out more at our
+                        <a href="https://developer.ibm.com/microservice-builder">developer.ibm.com page for Microservice Builder.</a>
+                      </p>
+                    </div>
+                    </br>
+                    </br>
+                    </br>
+
+                    <div class="deploy_method">
+                      <strong>Alternative: Helm/Kubectl</strong>
+
+                      <div class="deploy-pic">
+                        <asciinema-player src="images/helminstall.json" cols="80" rows="16" autoplay="1" loop="1"></asciinema-player>
+                        <script src="js/asciinema-player.js"></script>
+                      </div>
+
+                      <div class="topic-content">
+                        Or use the standard Kubernetes methods...
+                      </div>
+                      <ul>
+                        <li><code>helm install --name nodejs-sample .</code> from the chart directory</li>
+                        <li><code>kubectl get svc ibm-nodejs-sample</code> to retrieve the port (you want the second one, not 3000!)</li>
+                        <li>We provide the Helm chart for you</li>
+                      </ul>
+                      <p>Find out more at
+                        <a href="https://kubernetes.io/docs/tools">the official kubernetes.io docs.</a>
+                      </p>
+                    </div>
+                    </br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</body>
+
+</html>

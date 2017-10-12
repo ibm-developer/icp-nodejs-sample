@@ -1,0 +1,82 @@
+<!--
+  Licensed Materials - Property of IBM
+  (C) Copyright IBM Corp. 2017. All Rights Reserved.
+  US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="//www.ibm.com/favicon.ico" />
+  <title>Monitoring your Node.js applications</title>
+  <% include partials/header %>
+</head>
+
+<body id="ibm-com" class="home page-template page-template-page-brochureware page-template-page-brochureware-php page page-id-26 ibm-com ibm-type group-blog">
+  <div id="ibm-top" class="ibm-landing-page">
+      <% include partials/navbar %>
+        <div class="ibm-columns section-padding">
+
+          <div class="content-section">
+            <div class="doc-content-header">
+              How can this application be <strong>monitored</strong>?
+            </div>
+
+            <div class="doc-content-header">
+              Node Application Metrics
+            </div>
+
+            <div class="doc-content-details">
+              <p>This sample application uses
+                <a href="https://github.com/RuntimeTools/appmetrics">appmetrics</a> and <a href="https://github.com/RuntimeTools/appmetrics-dash">appmetrics-dash</a> to provide monitoring capabilities available at the <code>/appmetrics-dash</code> endpoint:</p>
+              <div class="monitoring-pic">
+                <img src="images/appmetrics-dash.png" width="1024px" height="500px"></img>
+              </div>
+              </br>
+              <p>Appmetrics provides a variety of capabilities:</p>
+              <ul>
+                <li>Various built-in data collection sources (including for databases)</li>
+                <li>Minimal performance overhead (typically
+                  < 0.5%)</li>
+                    <li>Trivial to install, use, and configure</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <div class="doc-content-header">
+              Prometheus
+            </div>
+
+            <div class="doc-content-details">
+              <p>This sample application uses
+                <a href="https://github.com/RuntimeTools/appmetrics-prometheus">appmetrics-prometheus</a>, which provides the <code>/metrics</code> endpoint.</p>
+              <p><code>chart/templates/service.yaml</code> contains the "scrape" annotation:</p>
+              <code>
+              annotations:</br>
+              &nbsp;&nbsp;prometheus.io/scrape: 'true'
+            </code>
+              </br>
+              </br>
+              <p>The two above factors enable you to access data similar to the following when you visit the Prometheus server's dashboard in your web browser:</p>
+              <div class="prom-pic">
+                <img src="images/prometheus.png" width="1024px" height="700px"></img>
+              </div>
+              </br>
+              <p>With a deployed Prometheus instance, this application (and any others using appmetrics-prometheus with the scrape configuration setting) will automatically be scraped by Prometheus.</p>
+              <p>Metrics from appmetrics-prometheus are detailed on <a href="https://www.npmjs.com/package/appmetrics-prometheus">npm.</a></p>
+              <p>Prometheus is useful in the following scenarios:</p>
+              <ul>
+                <li>Determine which pods or workers are doing the most work</li>
+                <li>Drill down to certain time periods to discover resource utilization problems</li>
+                <li>Trivial to set up and scrape your application, especially with the Helm annotation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </div>
+</body>
+
+</html>

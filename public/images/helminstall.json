@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "width": 196,
+  "height": 67,
+  "duration": 17.616483,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/usr/local/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.002371,
+      "\u001b]7;file://ICP-nodejs-chart\u0007"
+    ],
+    [
+      0.022396,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m❯\u001b[00m \u001b[K\u001b[155C\u001b[32m~/workItmes/ICP-nodejs-chart\u001b[00m \u001b[01;34m(\u001b[31mmaster\u001b[33m*\u001b[34m)\u001b[00m\u001b[193D"
+    ],
+    [
+      0.000297,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000326,
+      "\u001b[?2004h"
+    ],
+    [
+      0.177048,
+      "\u001b[7mhelm install --name nodejs-sample chart/nodejs-sample/ \u001b[27m"
+    ],
+    [
+      0.819309,
+      "\u001b[55D\u001b[27m\u001b[32mh\u001b[27m\u001b[32me\u001b[27m\u001b[32ml\u001b[27m\u001b[32mm\u001b[39m\u001b[27m \u001b[27mi\u001b[27mn\u001b[27ms\u001b[27mt\u001b[27ma\u001b[27ml\u001b[27ml\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me\u001b[27m \u001b[27mn\u001b[27mo\u001b[27md\u001b[27me\u001b[27mj\u001b[27ms\u001b[27m-\u001b[27ms\u001b[27ma\u001b[27mm\u001b[27mp\u001b[27ml\u001b[27me\u001b[27m \u001b[27m\u001b[4mc\u001b[27m\u001b[4mh\u001b[27m\u001b[4ma\u001b[27m\u001b[4mr\u001b[27m\u001b[4mt\u001b[27m\u001b[4m/\u001b[27m\u001b[4mn\u001b[27m\u001b[4mo\u001b[27m\u001b[4md\u001b[27m\u001b[4me\u001b[27m\u001b[4mj\u001b[27m\u001b[4ms\u001b[27m\u001b[4m-\u001b[27m\u001b[4ms\u001b[27m\u001b[4ma\u001b[27m\u001b[4mm\u001b[27m\u001b[4mp\u001b[27m\u001b[4ml\u001b[27m\u001b[4me\u001b[27m\u001b[4m/\u001b[24m\u001b[27m "
+    ],
+    [
+      2.8e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      0.002292,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.576339,
+      "NAME:   nodejs-sample\r\n"
+    ],
+    [
+      0.576339,
+      "LAST DEPLOYED: Tue Sep 26 17:04:26 2017\r\nNAMESPACE: default\r\nSTATUS: DEPLOYED\r\n\r\n"
+    ],
+    [
+      0.576339,
+      "RESOURCES:\r\n==> v1/Service\r\nNAME        "
+    ],
+    [
+      0.576339,
+      "   CLUSTER-IP  EXTERNAL-IP  PORT(S)         AGE\r\nnodejs-sample  10.0.0.158  "
+    ],
+    [
+      0.576339,
+      "<nodes>      3000:30510/TCP  4s\r\n\r\n==> v1beta1/Deployment"
+    ],
+    [
+      0.576339,
+      "\r\nNAME                      DESIRED  CURRENT  UP-TO-DATE  AVAILABLE  AGE\r\nnodejs-sample-deployment  1        1        1           0          0"
+    ]
+  ]
+}

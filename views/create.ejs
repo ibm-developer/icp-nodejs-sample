@@ -1,0 +1,88 @@
+<!--
+  Licensed Materials - Property of IBM
+  (C) Copyright IBM Corp. 2017. All Rights Reserved.
+  US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="//www.ibm.com/favicon.ico" />
+  <title>Creating Node.js applications</title>
+  <% include partials/header %>
+</head>
+
+<body id="ibm-com" class="home page-template page-template-page-brochureware page-template-page-brochureware-php page page-id-26 ibm-com ibm-type group-blog">
+  <div id="ibm-top" class="ibm-landing-page">
+      <% include partials/navbar %>
+
+        <div class="ibm-columns section-padding">
+
+          <div class="content-section">
+            <div class="doc-content-header">
+              How was this application <strong>created</strong>?
+            </div>
+
+            <div class="doc-content-details">
+              <p>This application was created using the
+                <strong>IBM Cloud Developer Tools</strong>, specifically, the <code>idt create</code> command.
+              </p>
+              </br>
+            <p>
+              This command created a starter project that this application was then extended to produce this sample.
+              The starter project includes a Dockerfile, all Node.js code neccessary to start the listen server,
+              a basic style-sheet, and a Helm chart.
+              The following options are selected in the command's interactive menus.
+              These options determine the pattern and language of our generated application.</p>
+              <ul class="big-text">
+                <li>Web App</li>
+                <li>Basic Web</li>
+                <li>Node</li>
+              </ul>
+              <p>The project name and hostname only matter if you plan to eventually deploy to Kubernetes on IBM's public cloud service.</p>
+              <p>You can find more information at the <a href="https://console.bluemix.net/docs/cloudnative/dev_cli.html#developercli">IBM Cloud Developer Tools docs</a>.</p>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <div class="doc-content-header">
+              Important files: Dockerfile and the Helm chart
+            </div>
+
+            <div class="doc-content-details">
+              <ul>
+                <li>The <code>server/server.js</code> code listens on port 3000: configurable in <code>server/config/local.json</code></li>
+                <li>The <code>Dockerfile</code> is used to expose port 3000</li>
+                <li>The Helm chart: <code>chart/nodejs-sample-values.yaml</code> explictly declares that the servicePort is 3000</li>
+                <li>The application is exposed via the <code>NodePort</code> mechanism in Kubernetes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <div class="doc-content-header">
+              Key features to highlight
+            </div>
+
+            <div class="doc-content-details">
+              <ul>
+                <li><code>require('appmetrics-dash').attach();</code> in <code>server/server.js</code></li>
+                <p>This provides the <code>/appmetrics-dash</code> endpoint</p>
+
+                <li><code>require('appmetrics-prometheus').attach();</code> in <code>server/server.js</code></li>
+                <p>This provides the <code>/metrics</code> endpoint</p>
+
+                <li><code>package.json</code> declares we'll use <code>appmetrics-dash</code>, <code>appmetrics-prometheus</code> and various dev dependencies</li>
+              </ul>
+
+              <p><a href="http://ejs.co/">EJS</a> has been used to reduce code duplication and to add publicly available pages.</p>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+</body>
+
+</html>

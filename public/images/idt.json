@@ -1,0 +1,771 @@
+{
+  "version": 1,
+  "width": 196,
+  "height": 66,
+  "duration": 109.589035,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/usr/local/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.074725,
+      "\u001b]7;file://ICP-nodejs-chart\u0007"
+    ],
+    [
+      0.456944,
+      "\u001b[1m\u001b[7m\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                                                   \r \r"
+    ],
+    [
+      0.002723,
+      "\u001b]7;file://ICP-nodejs-chart\u0007"
+    ],
+    [
+      0.013182,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m❯\u001b[00m \u001b[K\u001b[192C\u001b[32m~\u001b[00m\u001b[193D"
+    ],
+    [
+      0.000145,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000311,
+      "\u001b[?2004h"
+    ],
+    [
+      0.660273,
+      "\u001b[7midt create\u001b[27m"
+    ],
+    [
+      0.503303,
+      "\u001b[10D\u001b[27m\u001b[32mi\u001b[27m\u001b[32md\u001b[27m\u001b[32mt\u001b[39m\u001b[27m \u001b[27mc\u001b[27mr\u001b[27me\u001b[27ma\u001b[27mt\u001b[27me"
+    ],
+    [
+      0.00021,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      0.001586,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.17123,
+      "Log in to Bluemix using the \u001b[1;33mbx login\u001b[0m command to synchronize your projects with the Bluemix dashboard, and to enable the use of Bluemix services in your project. \r\n\u001b[1;32m? \u001b[0m\u001b[1;38mDo you wish to continue without logging in? [y/n]\u001b[0m\u001b[1;36m>\u001b[0m "
+    ],
+    [
+      0.470656,
+      "y"
+    ],
+    [
+      0.118532,
+      "\r\n"
+    ],
+    [
+      0.000205,
+      "\u001b[1;38mRetrieving available starters \u001b[0m\u001b[32m⠁\u001b[0m "
+    ],
+    [
+      0.075498,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b              "
+    ],
+    [
+      2.5e-05,
+      "                             \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      2.4e-05,
+      "\u001b[1;38mRetrieving available starters \u001b[0m\u001b[32m⠉\u001b[0m "
+    ],
+    [
+      0.075226,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                                      "
+    ],
+    [
+      3e-05,
+      "     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      2.1e-05,
+      "\u001b[1;38mRetrieving available starters \u001b[0m\u001b[32m⠙\u001b[0m "
+    ],
+    [
+      0.076127,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      6.1e-05,
+      "\b\b\b\b\b\b\b                                           \b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      2.1e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1.8e-05,
+      "\b\b\b\b\b\b\b"
+    ],
+    [
+      2.7e-05,
+      "\u001b[1;38mRetrieving available starters \u001b[0m\u001b[32m⠚\u001b[0m "
+    ],
+    [
+      0.075098,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      3.3e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                                       "
+    ],
+    [
+      2.2e-05,
+      "    \b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1.5e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1.1e-05,
+      "\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      5.8e-05,
+      "\u001b[1;38mRetrieving available starters \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.060796,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b             "
+    ],
+    [
+      4.5e-05,
+      "                              \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      4.5e-05,
+      "\u001b[1;32m? \u001b[0m\u001b[1;38mSelect a pattern:\u001b[0m\r\n1. Web App\r\n2. Mobile App\r\n3. Backend for Frontend\r\n4. Microservice\r\nEnter a number\u001b[1;36m>\u001b[0m "
+    ],
+    [
+      0.440909,
+      "1"
+    ],
+    [
+      0.103606,
+      "\r\n"
+    ],
+    [
+      1.8e-05,
+      "\u001b[1;32m? \u001b[0m\u001b[1;38mSelect a starter:\u001b[0m\r\n1. Basic Web\r\n2. Webpack\r\n3. Webpack + React\r\nEnter a number\u001b[1;36m>\u001b[0m "
+    ],
+    [
+      0.408489,
+      "1"
+    ],
+    [
+      0.681655,
+      "\r\n"
+    ],
+    [
+      8.6e-05,
+      "\r\n\u001b[1;32m? \u001b[0m\u001b[1;38mSelect a language:\u001b[0m\r\n1. Java - MicroProfile / Java EE\r\n2. Node\r\n3. Python\r\n4. Java - Spring Framework\r\n5. Swift\r\nEnter a number\u001b[1;36m>\u001b[0m "
+    ],
+    [
+      1.054174,
+      "2"
+    ],
+    [
+      0.231492,
+      "\r\n"
+    ],
+    [
+      2.1e-05,
+      "\r\n"
+    ],
+    [
+      4.6e-05,
+      "\u001b[1;32m? \u001b[0m\u001b[1;38mEnter a name for your project\u001b[0m\u001b[1;36m>\u001b[0m "
+    ],
+    [
+      0.44858,
+      "m"
+    ],
+    [
+      0.369872,
+      "y"
+    ],
+    [
+      0.270635,
+      "c"
+    ],
+    [
+      0.176159,
+      "o"
+    ],
+    [
+      0.127739,
+      "o"
+    ],
+    [
+      0.184378,
+      "l"
+    ],
+    [
+      0.241477,
+      "a"
+    ],
+    [
+      0.113346,
+      "p"
+    ],
+    [
+      0.133087,
+      "p"
+    ],
+    [
+      0.534548,
+      "\r\n"
+    ],
+    [
+      0.000225,
+      "\u001b[1;38mPreparing generators \u001b[0m\u001b[32m⠁\u001b[0m "
+    ],
+    [
+      0.075454,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b           "
+    ],
+    [
+      2.5e-05,
+      "                       \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1.5e-05,
+      "\u001b[1;38mPreparing generators \u001b[0m\u001b[32m⠉\u001b[0m "
+    ],
+    [
+      0.07546,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      3.7e-05,
+      "\b\b\b\b\b\b                                  \b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      2.2e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1.8e-05,
+      "\b\b\b\b"
+    ],
+    [
+      3e-05,
+      "\u001b[1;38mPreparing generators \u001b[0m\u001b[32m⠙\u001b[0m "
+    ],
+    [
+      0.064047,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b        "
+    ],
+    [
+      5e-05,
+      "                          \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1.9e-05,
+      "\b\b\r\n"
+    ],
+    [
+      0.012188,
+      "\u001b[1;38mGenerating project \u001b[0m\u001b[32m⠚\u001b[0m "
+    ],
+    [
+      0.07619,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                 "
+    ],
+    [
+      1.4e-05,
+      "               \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      5.3e-05,
+      "\u001b[1;38mGenerating project \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075204,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b   "
+    ],
+    [
+      0.071534,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      4e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                                \b"
+    ],
+    [
+      3.2e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      2.2e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      0.004363,
+      "\u001b[1;38mUnzipping project into current directory \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.005645,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      2.5e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                          "
+    ],
+    [
+      1.3e-05,
+      "                  "
+    ],
+    [
+      1.1e-05,
+      "          \b\b\b"
+    ],
+    [
+      1.1e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1.8e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1.2e-05,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b"
+    ],
+    [
+      1e-05,
+      "\b\b\b\b\b"
+    ],
+    [
+      3e-05,
+      "The project, \u001b[1;36mmycoolapp\u001b[0m, has been successfully saved into the current directory.\r\n"
+    ],
+    [
+      0.0001,
+      "\u001b[1;32mOK\u001b[0m\r\n"
+    ],
+
+    [
+    5e-05,
+    " ... Changes made to the starter omitted here ...\r\n"
+    ],
+
+
+    [
+      0.070802,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                   \r \r"
+    ],
+    [
+      0.001248,
+      "\u001b]7;file://ICP%2Dnodejs%2Dchart\u0007"
+    ],
+    [
+      0.00117,
+      "\u001b]7;file://ICP%2Dnodejs%2Dchart\u0007"
+    ],
+    [
+      5.6e-05,
+      "\u001b]2;ICP-nodejs-chart\u0007"
+    ],
+    [
+      1e-05,
+      "\u001b]1;..-nodejs-chart\u0007"
+    ],
+    [
+      0.029318,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mICP-nodejs-chart\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"
+    ],
+    [
+      1.8e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      2.689864,
+      "i\bidt deploy -t container --deploy-image-target mycluster.icp:8500/default/nodejs-sample  "
+    ],
+    [
+      0.000285,
+      " \u001b[?1l\u001b>"
+    ],
+    [
+      1.6e-05,
+      "\r\r\n"
+    ],
+    [
+      0.003367,
+      "\u001b]2;bluemix dev deploy -t container --deploy-image-target \u0007\u001b]1;idt\u0007"
+    ],
+    [
+      2.130299,
+      "\r\n"
+    ],
+    [
+      0.337507,
+      "Tag the Run image to the Docker registry as mycluster.icp:8500/default/nodejs-sample:0.0.1\r\n"
+    ],
+    [
+      0.058837,
+      "Unable to tag the image nodejs-sample, will now attempt to build and tag it\r\n"
+    ],
+    [
+      2.270977,
+      "\u001b[1;32mOK\u001b[0m\r\nPush the Run image to the Docker registry\r\n\u001b[1;38mPushing \u001b[0m\u001b[32m⠁\u001b[0m "
+    ],
+    [
+      0.074651,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠉\u001b[0m "
+    ],
+    [
+      0.075564,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠙\u001b[0m "
+    ],
+    [
+      0.075434,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠚\u001b[0m "
+    ],
+    [
+      0.075388,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075639,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.07539,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075449,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075654,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠲\u001b[0m "
+    ],
+    [
+      0.075486,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠴\u001b[0m "
+    ],
+    [
+      0.075442,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠤\u001b[0m "
+    ],
+    [
+      0.075652,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠄\u001b[0m "
+    ],
+    [
+      0.075459,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠄\u001b[0m "
+    ],
+    [
+      0.075347,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠤\u001b[0m "
+    ],
+    [
+      0.075597,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠴\u001b[0m "
+    ],
+    [
+      0.076408,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠲\u001b[0m "
+    ],
+    [
+      0.074404,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075732,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075509,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075357,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075664,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠚\u001b[0m "
+    ],
+    [
+      0.075626,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠙\u001b[0m "
+    ],
+    [
+      0.075214,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠉\u001b[0m "
+    ],
+    [
+      0.075432,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠁\u001b[0m "
+    ],
+
+    [
+      0.075611,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠄\u001b[0m "
+    ],
+    [
+      0.075628,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠤\u001b[0m "
+    ],
+    [
+      0.075613,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠴\u001b[0m "
+    ],
+    [
+      0.075627,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠲\u001b[0m "
+    ],
+    [
+      0.075653,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.07561,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075641,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075424,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075642,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠚\u001b[0m "
+    ],
+    [
+      0.075439,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠙\u001b[0m "
+    ],
+    [
+      0.075645,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠉\u001b[0m "
+    ],
+    [
+      0.07581,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠁\u001b[0m "
+    ],
+    [
+      0.075633,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠁\u001b[0m "
+    ],
+    [
+      0.075622,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠉\u001b[0m "
+    ],
+    [
+      0.075638,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠙\u001b[0m "
+    ],
+    [
+      0.075438,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠚\u001b[0m "
+    ],
+    [
+      0.07566,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.07567,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075622,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075633,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075505,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠲\u001b[0m "
+    ],
+    [
+      0.075678,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠴\u001b[0m "
+    ],
+    [
+      0.075431,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠤\u001b[0m "
+    ],
+    [
+      0.075316,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠄\u001b[0m "
+    ],
+    [
+      0.075861,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠄\u001b[0m "
+    ],
+    [
+      0.075625,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠤\u001b[0m "
+    ],
+    [
+      0.075505,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠴\u001b[0m "
+    ],
+    [
+      0.075408,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠲\u001b[0m "
+    ],
+    [
+      0.075648,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075624,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075391,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠂\u001b[0m "
+    ],
+    [
+      0.075442,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠒\u001b[0m "
+    ],
+    [
+      0.075367,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠚\u001b[0m "
+    ],
+    [
+      0.075695,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠙\u001b[0m "
+    ],
+    [
+      0.075416,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠉\u001b[0m "
+    ],
+    [
+      0.075355,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠁\u001b[0m "
+    ],
+    [
+      0.075275,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠁\u001b[0m "
+    ],
+    [
+      0.075707,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠉\u001b[0m "
+    ],
+    [
+      0.075442,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠙\u001b[0m "
+    ],
+    [
+      0.075487,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;38mPushing \u001b[0m\u001b[32m⠚\u001b[0m "
+    ],
+    [
+      0.064701,
+      "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b                     \b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\u001b[1;32mOK\u001b[0m\r\n"
+    ],
+    [
+      0.718205,
+      "Execute 'helm upgrade'\r\n"
+    ],
+    [
+      3.891634,
+      "\u001b[1;32mOK\u001b[0m\r\nPods:\r\n\r\n"
+    ],
+    [
+      5.843234,
+      "NAME                                        READY     STATUS        RESTARTS   AGE\r\njenkins-pipeline-4198245274-l3tg9           1/1       Running       0          7d\r\nnodejs-sample-deployment-1858864406-5hrgn   0/1       Terminating   0          3h\r\nnodejs-sample-deployment-3626085795-k7fmj   1/1       Running       0          7s\r\nzipkin-zipkin-2642600897-mvmpm              1/1       Running       0          15d\r\n"
+    ],
+    [
+      0.002353,
+      "\r\nDeployments:\r\n\r\n"
+    ],
+    [
+      0.723305,
+      "NAME                       DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE\r\njenkins-pipeline           1         1         1            1           7d\r\nnodejs-sample-deployment   1         1         1            1           4h\r\nzipkin-zipkin              1         1         1            1           15d\r\n"
+    ],
+    [
+      0.002545,
+      "\r\nServices:\r\n\r\n"
+    ],
+    [
+      0.8013,
+      "NAME               CLUSTER-IP   EXTERNAL-IP   PORT(S)                          AGE\r\njenkins-pipeline   10.0.0.11    <nodes>       8080:31000/TCP,50000:32665/TCP   7d\r\nkubernetes         10.0.0.1     <none>        443/TCP                          19d\r\nnodejs-sample      10.0.0.96    <nodes>       3000:31462/TCP                   4h\r\nzipkin             10.0.0.178   <nodes>       9411:30411/TCP                   15d\r\n"
+    ],
+    [
+      0.001541,
+      "\r\n"
+    ],
+    [
+      0.000839,
+      "Nodes:\r\n\r\n"
+    ],
+    [
+      0.85682,
+      "NAME             STATUS    AGE       VERSION\r\n172.16.216.131   Ready     19d       v1.7.3-11+f747daa02c9ffb\r\n172.16.216.139   Ready     19d       v1.7.3-11+f747daa02c9ffb\r\n172.16.216.162   Ready     19d       v1.7.3-11+f747daa02c9ffb\r\n172.16.216.74    Ready     19d       v1.7.3-11+f747daa02c9ffb\r\n"
+    ],
+    [
+      0.003437,
+      "\r\n"
+    ],
+    [
+      0.00202,
+      "Untag the Run image from the Docker registry\r\n"
+    ],
+    [
+      0.295097,
+      "\u001b[1;32mOK\u001b[0m\r\n"
+    ],
+    [
+      0.062564,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                   \r \r"
+    ],
+    [
+      0.000957,
+      "\u001b]7;file://ICP%2Dnodejs%2Dchart\u0007"
+    ],
+    [
+      0.001147,
+      "\u001b]7;file://ICP%2Dnodejs%2Dchart\u0007\u001b]2;: ICP-nodejs-chart\u0007\u001b]1;..-nodejs-chart\u0007"
+    ],
+    [
+      0.034611,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mICP-nodejs-chart\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K\u001b[?1h\u001b=\u001b[?1l\u001b>\r\r\n\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                   \r \r"
+    ],
+    [
+      0.001037,
+      "\u001b]7;file://ICP%2Dnodejs%2Dchart\u0007"
+    ],
+    [
+      0.001221,
+      "\u001b]7;file://ICP%2Dnodejs%2Dchart\u0007\u001b]2;ICP-nodejs-chart\u0007\u001b]1;..-nodejs-chart\u0007"
+    ],
+    [
+      0.02373,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mICP-nodejs-chart\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K\u001b[?1h\u001b="
+    ],
+    [
+      3.313533,
+      "\r\r\n"
+    ],
+    [
+      0.009257,
+      "\u001b[3;J\u001b[H\u001b[2J"
+    ]
+
+  ]
+}

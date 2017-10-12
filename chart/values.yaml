@@ -1,0 +1,25 @@
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2017. All Rights Reserved.
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+replicaCount: 1
+revisionHistoryLimit: 1
+image:
+  repository: adamroberts/icp-nodejs-sample-x86_64
+  # To eventually move to this repository once approvals are in place
+  # repository: ibmcom/icp-nodejs-sample-x86_64
+  tag: latest
+  pullPolicy: Always
+livenessProbe:
+  initialDelaySeconds: 30
+  periodSeconds: 10
+service:
+  name: Node
+  type: NodePort
+  servicePort: 3000
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
