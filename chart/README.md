@@ -39,7 +39,7 @@ You can view the deployed sample in your web browser. To retrieve the IP and por
 
 `export SAMPLE_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "fullname" . }})`
 
-`export SAMPLE_NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")``
+`export SAMPLE_NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")`
 
 Open your web browser at http://${SAMPLE_NODE_PORT}:${SAMPLE_NODE_IP} to view the sample.
 
