@@ -49,13 +49,15 @@ If you installed it with `helm install --name tester .` you'd remove the sample 
 
 ## Configuration
 
+The following table lists the configurable parameters of the ibm-nodejs-sample chart and their default values.
+| -----------------------    | ---------------------------------------------   | ---------------------------------------------------------- |
 | Parameter                  | Description                                     | Default                                                    |
-| `image.repository`         | image repository                                | ibmcom/ibm-nodejs-sample                                   |
+| `image.repository`         | image repository                                | ibmcom/icp-nodejs-sample                                   |
 | `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
 | `image.tag`                | 1.0.0                                           |                                                            |
 | `resources.limits.memory`  | Memory resource limits                          | `128m`                                                     |
-| `resources.limits.cpu`     | CPU resource limits                             | `100m`                                                    |
-| `service.type`             | k8s service type exposing ports, e.g. `NodePort`| `NodePort`                                                |
+| `resources.limits.cpu`     | CPU resource limits                             | `100m`                                                     |
+| `service.type`             | k8s service type exposing ports, e.g. `NodePort`| `NodePort`                                                 |
 | `service.port`             | TCP Port for this service                       | `3000`                                                     |
 
 ##### Configuring Node.js applications
