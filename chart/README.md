@@ -64,3 +64,8 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 ##### Configuring Node.js applications
 
 See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for all things Node.js - including more samples, tutorials and blog posts. For configuring Node.js itself, consult the official [Node.js community documentation](https://nodejs.org/en/docs/).
+
+### Disclaimers
+Node.js is an official trademark of Joyent. Images are used according to the Node.js visual guidelines - no copyright claims are made. You can view the guidelines [here](https://nodejs.org/static/documents/foundation-visual-guidelines.pdf).
+
+This icp-nodejs-sample is not formally related to or endorsed by the official Node.js open source or commercial project.
