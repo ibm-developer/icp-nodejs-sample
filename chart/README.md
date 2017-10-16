@@ -50,8 +50,9 @@ If you installed it with `helm install --name tester .` you'd remove the sample 
 ## Configuration
 
 The following table lists the configurable parameters of the ibm-nodejs-sample chart and their default values.
-| -----------------------    | ---------------------------------------------   | ---------------------------------------------------------- |
+
 | Parameter                  | Description                                     | Default                                                    |
+| -----------------------    | ---------------------------------------------   | ---------------------------------------------------------- |
 | `image.repository`         | image repository                                | ibmcom/icp-nodejs-sample                                   |
 | `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
 | `image.tag`                | 1.0.0                                           |                                                            |
