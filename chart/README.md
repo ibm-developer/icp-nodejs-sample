@@ -2,7 +2,8 @@
 
 ### This sample is for demonstrative purposes only and is NOT for production use! ###
 
-This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the application itself is one that makes use of various monitoring capabilities.
+## Introduction
+This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the application itself is one that makes use of various monitoring capabilities. Note that this sample was produced in early October 2017 and so the code you are provided with by using the generators may differ!
 
 This sample was created using `idt create` with the following choices:
 - Web App
@@ -19,11 +20,11 @@ This allows developers to quickly determine how the application is performing ac
 
 The `mycluster.icp` example here should match up with the entry you've added in `/etc/hosts`: it is the location of the private registry.
 
-## Requirements
+## Prerequisites
 
 There is only one optional requirement to make the most out of this sample: you should have Prometheus deployed into your IBM Cloud Private cluster where this sample will be installed. This is not a mandatory step and can be done after deployment, happy installing!
 
-## Configuration
+## Installing the Chart
 
 The Helm chart can be installed from the app center by finding the nodejs-sample and following the installation steps.
 
@@ -33,10 +34,30 @@ The Helm chart can also be installed with the following command from the directo
 
 You can find more information about deployment methods in the [IBM Cloud Private documentation](https://www.ibm.com/support/knowledgecenter/SSBS6K/product_welcome_cloud_private.html).
 
-## Accessing the Node.js sample
+## Verifying the Chart
+You can view the deployed sample in your web browser. To retrieve the IP and port:
 
-From a browser, use http://*external ip*:*nodeport* to access the application.
+`export SAMPLE_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "fullname" . }})`
 
-##### Configuring Node.js within IBM Cloud Private
+`export SAMPLE_NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")``
+
+Open your web browser at http://${SAMPLE_NODE_PORT}:${SAMPLE_NODE_IP} to view the sample.
+
+## Uninstalling the Chart
+
+If you installed it with `helm install --name tester .` you'd remove the sample with `helm delete --purge tester`. You can find the deployment with `helm list --all` and searching for an entry with the chart name "ibm-nodejs-sample".
+
+## Configuration
+
+| Parameter                  | Description                                     | Default                                                    |
+| `image.repository`         | image repository                                | ibmcom/ibm-nodejs-sample                                   |
+| `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
+| `image.tag`                | 1.0.0                                           |                                                            |
+| `resources.limits.memory`  | Memory resource limits                          | `128m`                                                     |
+| `resources.limits.cpu`     | CPU resource limits                             | `100m`                                                    |
+| `service.type`             | k8s service type exposing ports, e.g. `NodePort`| `NodePort`                                                |
+| `service.port`             | TCP Port for this service                       | `3000`                                                     |
+
+##### Configuring Node.js applications
 
 See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for all things Node.js - including more samples, tutorials and blog posts. For configuring Node.js itself, consult the official [Node.js community documentation](https://nodejs.org/en/docs/).
