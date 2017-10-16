@@ -41,7 +41,7 @@ You can view the deployed sample in your web browser. To retrieve the IP and por
 
 `export SAMPLE_NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")`
 
-Open your web browser at http://${SAMPLE_NODE_PORT}:${SAMPLE_NODE_IP} to view the sample.
+Open your web browser at `http://${SAMPLE_NODE_IP}:${SAMPLE_NODE_PORT}` to view the sample.
 
 ## Uninstalling the Chart
 
