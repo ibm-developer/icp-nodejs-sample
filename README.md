@@ -58,6 +58,8 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 | `image.tag`                | Image tag                                       | `1.0.0`                                                    |
 | `resources.limits.memory`  | Memory resource limits                          | `128m`                                                     |
 | `resources.limits.cpu`     | CPU resource limits                             | `100m`                                                     |
+| `resources.requests.cpu`  | CPU request limits                          | `128m`                                                     |
+| `resources.requests.cpu`     | Memory request limits                             | `100m`                                                     |
 | `service.type`             | k8s service type exposing ports, e.g. `NodePort`| `NodePort`                                                 |
 | `service.port`             | TCP Port for this service                       | `3000`                                                     |
 
