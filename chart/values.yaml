@@ -4,9 +4,17 @@
 replicaCount: 1
 revisionHistoryLimit: 1
 image:
+  # Intel
   repository: adamroberts/icp-nodejs-sample-x86_64
+  # Power
+  #repository: adamroberts/icp-nodejs-sample-ppc64le
+
   # To eventually move to this repository once approvals are in place
+  # Intel
   # repository: ibmcom/icp-nodejs-sample-x86_64
+  # Power
+  # repository: ibmcom/icp-nodejs-sample-ppc64le
+
   tag: latest
   pullPolicy: Always
 livenessProbe:
