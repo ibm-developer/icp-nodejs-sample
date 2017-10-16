@@ -29,7 +29,7 @@ The Helm chart can be installed from the app center by finding the nodejs-sample
 
 The Helm chart can also be installed with the following command from the directory containing `Chart.yaml`:
 
-`helm install --name nodejs-sample .`
+`helm install --name tester .` where tester can be anything.
 
 You can find more information about deployment methods in the [IBM Cloud Private documentation](https://www.ibm.com/support/knowledgecenter/SSBS6K/product_welcome_cloud_private.html).
 
