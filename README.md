@@ -9,8 +9,6 @@ This sample was created using `idt create` with the following choices:
 - Basic Web
 - Node
 
-Note that this was done in October 2017 and so the generators may have changed since then - you shouldn't expect all files here to be identical to those provided by the generators.
-
 Modifications were then made to use EJS, to add a gulp task, and to add the content. The stylesheet provided is largely based on the [Node.js @ IBM developer center](https://developer.ibm.com/node).
 
 - This example uses [appmetrics](https://github.com/RuntimeTools/appmetrics) and [appmetrics-dash](https://github.com/RuntimeTools/appmetrics-dash): the endpoint being `/appmetrics-dash`.
@@ -27,11 +25,11 @@ There is only one optional requirement to make the most out of this sample: you 
 
 ## Configuration
 
-The Helm chart can be installed from the app center by finding the ibm-nodejs-sample entry and following the installation steps.
+The Helm chart can be installed from the app center by finding the nodejs-sample and following the installation steps.
 
 The Helm chart can also be installed with the following command from the directory containing `Chart.yaml`:
 
-`helm install --name nodejs-sample .`
+`helm install --name tester .` where tester can be anything.
 
 You can find more information about deployment methods in the [IBM Cloud Private documentation](https://www.ibm.com/support/knowledgecenter/SSBS6K/product_welcome_cloud_private.html).
 
