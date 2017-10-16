@@ -53,9 +53,9 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 
 | Parameter                  | Description                                     | Default                                                    |
 | -----------------------    | ---------------------------------------------   | ---------------------------------------------------------- |
-| `image.repository`         | image repository                                | ibmcom/icp-nodejs-sample                                   |
+| `image.repository`         | image repository                                | `ibmcom/icp-nodejs-sample`                                 |
 | `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
-| `image.tag`                | 1.0.0                                           |                                                            |
+| `image.tag`                | Image tag                                       | `1.0.0`                                                    |
 | `resources.limits.memory`  | Memory resource limits                          | `128m`                                                     |
 | `resources.limits.cpu`     | CPU resource limits                             | `100m`                                                     |
 | `service.type`             | k8s service type exposing ports, e.g. `NodePort`| `NodePort`                                                 |
