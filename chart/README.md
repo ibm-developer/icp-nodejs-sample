@@ -53,15 +53,18 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 
 | Parameter                  | Description                                     | Default                                                    |
 | -----------------------    | ---------------------------------------------   | ---------------------------------------------------------- |
+| `replicaCount`             | How many pods to deploy                         | 1                                                          |
+| `revisionHistoryLimit`     | Optional field that specifies the number of old ReplicaSets to retain to allow rollback   | 1                |
 | `image.repository`         | image repository                                | `ibmcom/icp-nodejs-sample`                                 |
-| `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
 | `image.tag`                | Image tag                                       | `1.0.0`                                                    |
+| `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
+| `livenessProbe.initialDelaySeconds`   | How long to wait before beginning the checks our pod(s) are up |   30                             |
+| `livenessProbe.periodSeconds`         | The interval at which we'll check if a pod is running OK before being restarted     | 10          |
+| `service.name`             | k8s service name                                | `Node`                                                     |
+| `service.type`             | k8s service type exposing port                  | `NodePort`                                                 |
+| `service.port`             | TCP Port for this service                       | 3000                                                       |
 | `resources.limits.memory`  | Memory resource limits                          | `128m`                                                     |
 | `resources.limits.cpu`     | CPU resource limits                             | `100m`                                                     |
-| `resources.requests.cpu`  | CPU request limits                          | `128m`                                                     |
-| `resources.requests.cpu`     | Memory request limits                             | `100m`                                                     |
-| `service.type`             | k8s service type exposing ports, e.g. `NodePort`| `NodePort`                                                 |
-| `service.port`             | TCP Port for this service                       | `3000`                                                     |
 
 ##### Configuring Node.js applications
 
