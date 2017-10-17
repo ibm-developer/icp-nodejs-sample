@@ -26,4 +26,4 @@ run-cmd : ""
 debug-cmd : "npm run debug"
 stop-cmd : "npm stop"
 
-chart-path: "chart"
+chart-path: "chart/ibm-nodejs-sample"
