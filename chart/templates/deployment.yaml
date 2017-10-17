@@ -4,16 +4,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: {{ template "fullname" . }}-deployment
+  name: {{ template "fullname" . }}
   labels:
+    app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
 spec:
   replicas:  {{ .Values.replicaCount }}
   revisionHistoryLimit: {{ .Values.revisionHistoryLimit }}
   template:
     metadata:
       labels:
-        app: "{{ .Chart.Name }}-selector"
+        app: {{ template "fullname" . }}-selector
     spec:
      containers:
       - name: {{ .Chart.Name  }}
