@@ -32,7 +32,7 @@
                   <div class="contents">
 
                     <div class="deploy_method">
-                      <strong>IBM Cloud Developer Tools</strong>
+                      <strong>IBM Cloud Developer Tools ("idt")</strong>
                       <div class="deploy-pic">
                         <asciinema-player src="images/idt.json" cols="80" rows="16" autoplay="1" loop="1"></asciinema-player>
                         <script src="js/asciinema-player.js"></script>
@@ -42,8 +42,9 @@
                         This deployment method was used for this sample.
                       </div>
                       <ul>
+                        <li>For an in-depth guide involving pushing your own image to the private registry, see <a href="https://www.ibm.com/blogs/bluemix/2017/09/deploying-ibm-cloud-private-ibm-cloud-developer-tools-cli/">this blog post</a></li>
+                        <li>Once you can docker login to mycluster.icp:8500 OK, you'll be able to deploy</li>
                         <li><code>idt deploy -t container --deploy-image-target mycluster.icp:8500/default/nodejs-sample</code></li>
-                        <p>In the example above, mycluster.icp:8500 refers to the private image registry, and an entry in <code>/etc/hosts</code> is present</p>
                         <li>Runs on Windows, Linux, macOS</li>
                         <li>One install command, various useful plugins</li>
                       </ul>
