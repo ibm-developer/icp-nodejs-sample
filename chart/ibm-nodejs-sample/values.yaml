@@ -17,7 +17,7 @@ image:
   # Power
   # repository: ibmcom/icp-nodejs-sample-ppc64le
   # Linux on Z
-  # repository: ibmcom/icp-nodejs-sample-ppc64le
+  # repository: ibmcom/icp-nodejs-sample-s390x
 
   tag: latest
   pullPolicy: Always
