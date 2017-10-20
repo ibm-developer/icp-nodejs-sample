@@ -18,7 +18,7 @@ spec:
       labels:
         app: {{ template "fullname" . }}-selector
     spec:
-     containers:
+      containers:
       - name: {{ .Chart.Name  }}
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
@@ -31,3 +31,8 @@ spec:
         env:
           - name: PORT
             value : "{{ .Values.service.port }}"
+      # Restrict which workers the deployment will go to
+      nodeSelector:
+        beta.kubernetes.io/arch: amd64
+        #beta.kubernetes.io/arch: s390x
+        #beta.kubernetes.io/arch: ppc64le
