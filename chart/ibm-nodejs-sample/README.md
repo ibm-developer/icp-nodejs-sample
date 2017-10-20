@@ -73,9 +73,9 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for all things Node.js - including more samples, tutorials and blog posts. For configuring Node.js itself, consult the official [Node.js community documentation](https://nodejs.org/en/docs/).
 
 ### Deploying on platforms other than x86-64
-- Ensure your nodes are labelled according to their architecture under the "Platform" -> "Nodes" page under IBM Cloud Private. An example label that's automatically created for us is `beta-kubernetes.io/arch-s390x`
+- Ensure your nodes are labelled according to their architecture under the "Platform" -> "Nodes" page under IBM Cloud Private. An example label that's automatically created for us is `beta-kubernetes.io/arch-s390x`.
 - Modify this chart's `templates/deployment.yaml` file, looking for the `selector` tag.
-- To ensure the deployment(s) use the correct Docker image, modify the `selector` tag and add the following under `spec` (you can see examples in `templates/deployment.yaml`)
+- To ensure the deployment(s) use the correct Docker image, modify the `selector` tag and add the following under `spec` (you can see examples in `templates/deployment.yaml`).
 
 - For IBM Linux on Z systems:
   ```
