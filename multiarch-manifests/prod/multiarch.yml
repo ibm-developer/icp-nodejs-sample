@@ -2,7 +2,7 @@ image: ibmcom/icp-nodejs-sample:latest
 
 manifests:
   -
-    image: ibmcom/icp-nodejs-sample-x86_64:latest
+    image: ibmcom/icp-nodejs-sample-amd64:latest
     platform:
       os: linux
       architecture: amd64

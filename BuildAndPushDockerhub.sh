@@ -6,7 +6,7 @@
 
 if ! [ $# -eq 3 ] ;  then
   echo "Requires three parameters: the image name you want, the tag you want, the Dockerhub ID and the repository name"
-  echo "E.g. BuildAndPushDockerhub.sh icp-nodejs-sample-x86_64 0.0.1 adamroberts"
+  echo "E.g. ./BuildAndPushDockerhub.sh icp-nodejs-sample-amd64 1.0.0 adamroberts"
   exit;
 fi
 

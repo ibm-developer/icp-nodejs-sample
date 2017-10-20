@@ -10,3 +10,5 @@ Follow the instructions [here](https://github.com/estesp/manifest-tool).
 - `export PATH=$GOPATH/src/github.com/estesp/manifest-tool:$PATH`
 - `docker login`
 - `manifest-tool push from-spec multiarch.yml`
+
+Point to the prod or test folders as appropriate.
