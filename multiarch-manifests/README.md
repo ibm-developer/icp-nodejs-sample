@@ -1,6 +1,8 @@
-### This is where the file for multi-arch support will be provided.
+### This is where the file for multi-arch support is provided.
 
-See [here](https://github.com/docker/cli/pull/138) for details.
+The objective of using a multi-arch Docker image is that users won't need to modify the nodeSelector tag in the Helm chart.
+
+See [here](https://github.com/docker/cli/pull/138) for details on how this works.
 
 Interim solution:
 Follow the instructions [here](https://github.com/estesp/manifest-tool).
