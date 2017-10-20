@@ -7,4 +7,4 @@ Follow the instructions [here](https://github.com/estesp/manifest-tool).
 
 - `export PATH=$GOPATH/src/github.com/estesp/manifest-tool:$PATH`
 - `docker login`
-- `./manifest-tool push from-spec multiarch.yml`
+- `manifest-tool push from-spec multiarch.yml`
