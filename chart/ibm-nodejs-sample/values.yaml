@@ -4,16 +4,11 @@
 replicaCount: 1
 revisionHistoryLimit: 1
 image:
-  # Intel
-  repository: adamroberts/icp-nodejs-sample-x86_64
-  # Power
-  # repository: adamroberts/icp-nodejs-sample-ppc64le
-  # Linux on Z
-  # repository: adamroberts/icp-nodejs-sample-s390x
+  # Eventually there'll be a multiarch image at
+  # repository; ibmcom/icp-nodejs-sample
 
-  # To eventually move to this repository once approvals are in place
   # Intel
-  # repository: ibmcom/icp-nodejs-sample-x86_64
+  repository: ibmcom/icp-nodejs-sample-x86_64
   # Power
   # repository: ibmcom/icp-nodejs-sample-ppc64le
   # Linux on Z
