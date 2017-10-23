@@ -7,6 +7,26 @@
 require('appmetrics-dash').attach();
 require('appmetrics-prometheus').attach();
 
+if (process.env.USE_ZIPKIN) {
+  console.log("This sample will attempt to send trace data to a Zipkin server")
+  var zipkinHost = "localhost"
+  var zipkinPort = 9411
+
+  if (process.env.ZIPKIN_SERVICE_HOST && process.env.ZIPKIN_SERVICE_PORT) {
+    console.log("Routing Zipkin traffic to the Zipkin Kubernetes service")
+    zipkinHost = process.env.ZIPKIN_SERVICE_HOST
+    zipkinPort = process.env.ZIPKIN_SERVICE_PORT  
+  } else {
+    console.log("Detected we're running the Zipkin server locally")
+  }
+
+  var appzip = require('appmetrics-zipkin')({
+    host: zipkinHost,
+    port: zipkinPort,
+    serviceName:'frontend'
+  });
+}
+
 const appName = require('./../package').name;
 const express = require('express');
 const log4js = require('log4js');
@@ -37,6 +57,5 @@ app.get('/', function(req, res) {
 
 const port = process.env.PORT || localConfig.port;
 app.listen(port, function(){
-	logger.info(`Node.js sample listening on http://localhost:${port}`);
-
+  logger.info(`Node.js sample listening on http://localhost:${port}`);
 });
