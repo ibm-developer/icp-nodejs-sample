@@ -4,16 +4,7 @@
 replicaCount: 1
 revisionHistoryLimit: 1
 image:
-  # Eventually there'll be a multiarch image at
-  # repository; ibmcom/icp-nodejs-sample
-
-  # Intel
-  repository: ibmcom/icp-nodejs-sample-x86_64
-  # Power
-  # repository: ibmcom/icp-nodejs-sample-ppc64le
-  # Linux on Z
-  # repository: ibmcom/icp-nodejs-sample-s390x
-
+  repository: ibmcom/icp-nodejs-sample
   tag: latest
   pullPolicy: Always
 livenessProbe:

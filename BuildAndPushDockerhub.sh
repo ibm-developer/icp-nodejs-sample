@@ -21,7 +21,11 @@ echo "Image name will be: ${IMAGE_NAME}"
 echo "Tag will be: ${TAG}"
 echo "Docker ID is ${DOCKER_ID_USER}"
 
-docker login -u ${DOCKER_ID_USER}
+
+echo "Omitting docker login step - uncomment this part if you're pushing directly to an account"
+sleep 3
+# This is so we can use a functional ID to push to another repository
+# docker login -u ${DOCKER_ID_USER}
 
 if [ $? -ne 0 ]; then
   echo "Didn't login successfully, bailing"; exit;
