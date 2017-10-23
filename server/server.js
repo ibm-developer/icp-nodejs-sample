@@ -23,7 +23,7 @@ if (process.env.USE_ZIPKIN) {
   var appzip = require('appmetrics-zipkin')({
     host: zipkinHost,
     port: zipkinPort,
-    serviceName:'frontend'
+    serviceName:'icp-nodejs-sample'
   });
 }
 
