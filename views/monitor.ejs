@@ -32,7 +32,7 @@
               <p>This sample application uses
                 <a href="https://github.com/RuntimeTools/appmetrics">appmetrics</a> and <a href="https://github.com/RuntimeTools/appmetrics-dash">appmetrics-dash</a> to provide monitoring capabilities available at the <code>/appmetrics-dash</code> endpoint:</p>
               <div class="monitoring-pic">
-                <img src="images/appmetrics-dash.png" width="1024px" height="500px"></img>
+                <img src="images/appmetrics-dash.png" width="1024px" height="500px" alt="appmetrics-dash showing plenty of metrics."></img>
               </div>
               </br>
               <p>Appmetrics provides a variety of capabilities:</p>
@@ -62,7 +62,7 @@
               </br>
               <p>The two above factors enable you to access data similar to the following when you visit the Prometheus server's dashboard in your web browser:</p>
               <div class="prom-pic">
-                <img src="images/prometheus.png" width="1024px" height="700px"></img>
+                <img src="images/prometheus.png" width="1024px" height="700px" alt="Prometheus chart showing CPU usage across pods."></img>
               </div>
               </br>
               <p>With a deployed Prometheus instance, this application (and any others using appmetrics-prometheus with the scrape configuration setting) will automatically be scraped by Prometheus.</p>
@@ -75,6 +75,31 @@
               </ul>
             </div>
           </div>
+
+          <div class="content-section">
+            <div class="doc-content-header">
+              Zipkin
+            </div>
+
+            <div class="doc-content-details">
+              <p>This sample application uses
+                <a href="https://github.com/RuntimeTools/appmetrics-metrics">appmetrics-zipkin.</a></p>
+              <p>This can be controlled by the environment variable <code>USE_ZIPKIN</code> in the provided Docker file.</p>
+              <p>Use of this module will result in HTTP trace being added to your Express endpoints automatically.</p>
+              <div class="zipkin-pic">
+                <img src="images/zipkin.png" width="1024px" height="320px" alt="Zipkin trace: showing the msb pic being loaded at an endpoint."></img>
+              </div>
+              </br>
+              <p>With a deployed Zipkin instance (e.g. as part of the Microservice Builder fabric), this application will automatically provide trace data to the Zipkin server.</p>
+              <p>Zipkin is useful in the following scenarios:</p>
+              <ul>
+                <li>Determine <strong>which</strong> endpoints are especially slow</li>
+                <li>Determine <strong>why</strong> certain endpoints are slow; request details are also provided</li>
+                <li>Trivial to set up and use with the appmetrics-zipkin module</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
   </div>
 </body>
