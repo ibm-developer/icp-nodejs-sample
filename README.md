@@ -39,9 +39,8 @@ You can find more information about deployment methods in the [IBM Cloud Private
 ## Verifying the Chart
 You can view the deployed sample in your web browser. To retrieve the IP and port:
 
-`export SAMPLE_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "fullname" . }})`
-
 `export SAMPLE_NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")`
+`export SAMPLE_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "fullname" . }})`
 
 Open your web browser at `http://${SAMPLE_NODE_IP}:${SAMPLE_NODE_PORT}` to view the sample.
 
