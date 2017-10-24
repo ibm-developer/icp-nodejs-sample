@@ -17,7 +17,7 @@ Modifications were then made to use EJS, to add a gulp task, and to add the cont
 - This example uses [appmetrics](https://github.com/RuntimeTools/appmetrics) and [appmetrics-dash](https://github.com/RuntimeTools/appmetrics-dash): the endpoint being `/appmetrics-dash`.
 - This example features the "scrape" annotation in the `<chart directory>/templates/service.yaml` file. In combination with the [appmetrics-prometheus](https://github.com/RuntimeTools/appmetrics-prometheus) module inclusion and usage, this enables the sample to be automatically scraped by a deployed instance of Prometheus in order for metrics to be gathered and displayed using the Prometheus web UI. You can view the raw data that will be available to Prometheus at the `/metrics` endpoint.
 This allows developers to quickly determine how the application is performing across potentially many Kubernetes pods.
-
+- This example uses [appmetrics-zipkin](https://github.com/RuntimeTools/appmetrics-zipkin). If Zipkin is deployed (e.g. with the Microservice Builder fabric), trace information will be available under the service name "icp-nodejs-sample". To enable this feature, modify `Dockerfile` and set `USE_ZIPKIN` to `true`. You can dynamically modify applications as well using the IBM CLoud Private web UI - this includes the setting of environment variables and it's recommended you restart the pod for the change to take effect.
 - This example can be deployed using the IBM Cloud Developer Tools, for example: `idt deploy -t container --deploy-image-target mycluster.icp:8500/default/nodejs-sample`.
 
 The `mycluster.icp` example here should match up with the entry you've added in `/etc/hosts`: it is the location of the private registry.
@@ -39,9 +39,9 @@ You can find more information about deployment methods in the [IBM Cloud Private
 ## Verifying the Chart
 You can view the deployed sample in your web browser. To retrieve the IP and port:
 
-`export SAMPLE_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "fullname" . }})`
-
 `export SAMPLE_NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")`
+
+`export SAMPLE_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "fullname" . }})`
 
 Open your web browser at `http://${SAMPLE_NODE_IP}:${SAMPLE_NODE_PORT}` to view the sample.
 
@@ -58,7 +58,7 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 | `replicaCount`             | How many pods to deploy                         | 1                                                          |
 | `revisionHistoryLimit`     | Optional field that specifies the number of old ReplicaSets to retain to allow rollback   | 1                |
 | `image.repository`         | image repository                                | `ibmcom/icp-nodejs-sample`                                 |
-| `image.tag`                | Image tag                                       | `1.0.0`                                                    |
+| `image.tag`                | Image tag                                       | `latest`                                                    |
 | `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
 | `livenessProbe.initialDelaySeconds`   | How long to wait before beginning the checks our pod(s) are up |   30                             |
 | `livenessProbe.periodSeconds`         | The interval at which we'll check if a pod is running OK before being restarted     | 10          |
