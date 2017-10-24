@@ -15,7 +15,7 @@
     "appmetrics": "^3.0.1",
     "appmetrics-dash": "^3.3.3",
     "appmetrics-prometheus": "^0.0.2",
-    "appmetrics-zipkin": "^1.0.0",
+    "appmetrics-zipkin": "^1.0.2",
     "body-parser": "^1.17.2",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
