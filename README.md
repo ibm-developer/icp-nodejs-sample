@@ -58,7 +58,7 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 | `replicaCount`             | How many pods to deploy                         | 1                                                          |
 | `revisionHistoryLimit`     | Optional field that specifies the number of old ReplicaSets to retain to allow rollback   | 1                |
 | `image.repository`         | image repository                                | `ibmcom/icp-nodejs-sample`                                 |
-| `image.tag`                | Image tag                                       | `1.0.0`                                                    |
+| `image.tag`                | Image tag                                       | `latest`                                                    |
 | `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
 | `livenessProbe.initialDelaySeconds`   | How long to wait before beginning the checks our pod(s) are up |   30                             |
 | `livenessProbe.periodSeconds`         | The interval at which we'll check if a pod is running OK before being restarted     | 10          |
