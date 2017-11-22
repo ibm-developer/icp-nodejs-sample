@@ -73,22 +73,10 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for all things Node.js - including more samples, tutorials and blog posts. For configuring Node.js itself, consult the official [Node.js community documentation](https://nodejs.org/en/docs/).
 
 ### Deploying on platforms other than x86-64
-- Ensure your nodes are labelled according to their architecture under the "Platform" -> "Nodes" page under IBM Cloud Private. An example label that's automatically created for us is `beta-kubernetes.io/arch-s390x`.
-- Modify this chart's `templates/deployment.yaml` file, looking for the `selector` tag.
-- To ensure the deployment(s) use the correct Docker image, modify the `selector` tag and add the following under `spec` (you can see examples in `templates/deployment.yaml`).
+- Multiarch images are used so the correct Node.js Docker image will be pulled based on your platform. Supported platforms include ppc64le, x86-64 and s390x.
 
-- For IBM Linux on Z systems:
-  ```
-    nodeSelector:
-      beta.kubernetes.io/arch: s390x
-  ```
-- For IBM Power Little-Endian systems:
-  ```
-    nodeSelector:
-      beta.kubernetes.io/arch: ppc64le
-  ```
-- For more details see [here](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/).
-
+### Testing the chart
+- Either run `test-chart.sh` or run `helm test sample` yourself (assuming you've deployed it with the release name `sample`.
 
 ### Disclaimers
 Node.js is an official trademark of Joyent. Images are used according to the Node.js visual guidelines - no copyright claims are made. You can view the guidelines [here](https://nodejs.org/static/documents/foundation-visual-guidelines.pdf).
