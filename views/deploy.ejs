@@ -31,15 +31,11 @@
 
                   <div class="contents">
 
-                    <div class="deploy_method">
+                    <div class="deploy-method">
                       <strong>IBM Cloud Developer Tools ("idt")</strong>
-                      <div class="deploy-pic">
-                        <asciinema-player src="images/idt.json" cols="80" rows="16" autoplay="1" loop="1"></asciinema-player>
-                        <script src="js/asciinema-player.js"></script>
-                      </div>
-
                       <div class="topic-content">
                         This deployment method was used for this sample.
+                        The IBM Cloud Developer Tools are available on certain platforms only, check our docs for the most up to date information.
                       </div>
                       <ul>
                         <li>For an in-depth guide involving pushing your own image to the private registry, see <a href="https://www.ibm.com/blogs/bluemix/2017/09/deploying-ibm-cloud-private-ibm-cloud-developer-tools-cli/">this blog post</a></li>
@@ -52,38 +48,36 @@
                         <a href="https://console.bluemix.net/docs/cloudnative/dev_cli.html#developercli">IBM Cloud Developer Tools docs.</a>
                       </p>
                     </div>
-                    </br>
 
-                    <div class="deploy_method">
+                    <div class="deploy-pic">
+                      <asciinema-player src="images/idt.json" cols="80" rows="16" autoplay="1" loop="1"></asciinema-player>
+                      <script src="js/asciinema-player.js"></script>
+                    </div>
+
+                    <div class="deploy-method">
                       <strong>Alternative: Microservice Builder</strong>
-                      <div class="deploy-pic">
-                        <img src="images/msb.png" alt="Microservice Builder in the catalog">
-                      </div>
-
                       <div class="topic-content">
                         Available with IBM Cloud Private.
                       </div>
                       <ul>
                         <li>Focus on writing and committing code</li>
                         <li>Simplified deployment process</li>
-                        <li>Set up an org, deploy the pipeline to watch said org, auto deploy on Git commit</li>
+                        <li>Create org, deploy pipeline, auto-deploy on Git commits</li>
                       </ul>
                       <p>Find out more at our
                         <a href="https://developer.ibm.com/microservice-builder">developer.ibm.com page for Microservice Builder.</a>
                       </p>
+                      <p>Follow our guide at
+                        <a href="https://developer.ibm.com/node/2017/10/27/microservice-builder-node-js-deployments/">our Microservice Builder and Node.js blog post.</a>
+                      </p>
                     </div>
-                    </br>
-                    </br>
-                    </br>
 
-                    <div class="deploy_method">
+                    <div class="deploy-pic">
+                      <img src="images/msb.png" alt="Microservice Builder in the catalog">
+                    </div>
+
+                    <div class="deploy-method">
                       <strong>Alternative: Helm/Kubectl</strong>
-
-                      <div class="deploy-pic">
-                        <asciinema-player src="images/helminstall.json" cols="80" rows="16" autoplay="1" loop="1"></asciinema-player>
-                        <script src="js/asciinema-player.js"></script>
-                      </div>
-
                       <div class="topic-content">
                         Or use the standard Kubernetes methods...
                       </div>
@@ -96,7 +90,12 @@
                         <a href="https://kubernetes.io/docs/tools">the official kubernetes.io docs.</a>
                       </p>
                     </div>
-                    </br>
+
+                    <div class="deploy-pic">
+                      <asciinema-player src="images/helminstall.json" cols="80" rows="16" autoplay="1" loop="1"></asciinema-player>
+                      <script src="js/asciinema-player.js"></script>
+                    </div>
+
                   </div>
                 </div>
               </div>

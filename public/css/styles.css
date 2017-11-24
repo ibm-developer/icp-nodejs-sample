@@ -1523,19 +1523,6 @@ code {
   font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
 }
 
-.deploy-pic {
-  float: right;
-  max-width: 100%;
-  height: auto;
-  /* Thanks https://stackoverflow.com/questions/16217355/automatically-resize-images-with-browser-size-using-css */
-  width: auto\9;
-  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
-}
-
-.deploy-pic img {
-  height: 280px;
-  width: 600px;
-}
 
 #doc-content-header {
   font-size: 24px;
@@ -1545,11 +1532,6 @@ code {
 
 #doc-content-header strong {
   color: #3d70b2;
-}
-
-.deploy_method {
-  margin: 10px;
-  padding: 10px;
 }
 
 .ibm-fluid {
@@ -1648,4 +1630,27 @@ code {
 
 #ibm-columns {
   background-color: white;
+}
+
+.deploy-method {
+  width: 45%;
+  float: left;
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.deploy-pic {
+  width: 45%;
+  float: right;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+  height: 300px;
+  padding: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.deploy-pic img {
+  height: 300px;
+  width: 100%;
 }
