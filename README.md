@@ -1,11 +1,11 @@
 # Node.js sample Helm Chart
 
-### This sample is for demonstrative purposes only and is NOT for production use! ###
+### This sample is for demonstrative purposes only and is NOT for production use. ###
 
-### For all features to be available this is best viewed in Google Chrome or Safari!
+### For all features to be available this is best viewed in Google Chrome or Safari.
 
 ## Introduction
-This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the application itself is one that makes use of various monitoring capabilities. Note that this sample was produced in early October 2017 and so the code you are provided with by using the generators may differ!
+This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the application itself is one that makes use of various monitoring capabilities. Note that this sample was produced in early October 2017 and so the code you are provided with by using the generators may differ! The application provided uses the `ibmcom/ibmnode` Docker images.
 
 This sample was created using `idt create` with the following choices:
 - Web App
@@ -49,6 +49,10 @@ Open your web browser at `http://${SAMPLE_NODE_IP}:${SAMPLE_NODE_PORT}` to view 
 
 If you installed it with `helm install --name tester .` you'd remove the sample with `helm delete --purge tester`. You can find the deployment with `helm list --all` and searching for an entry with the chart name "ibm-nodejs-sample".
 
+## Testing the chart with Helm
+- Run `test-chart.sh` OR
+- Run `helm test sample`: assuming you've deployed it with the release name `sample`.
+
 ## Configuration
 
 The following table lists the configurable parameters of the ibm-nodejs-sample chart and their default values.
@@ -74,9 +78,6 @@ See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for al
 
 ### Deploying on platforms other than x86-64
 - Multiarch images are used so the correct Node.js Docker image will be pulled based on your platform. Supported platforms include ppc64le, x86-64 and s390x.
-
-### Testing the chart
-- Either run `test-chart.sh` or run `helm test sample` yourself (assuming you've deployed it with the release name `sample`.
 
 ### Disclaimers
 Node.js is an official trademark of Joyent. Images are used according to the Node.js visual guidelines - no copyright claims are made. You can view the guidelines [here](https://nodejs.org/static/documents/foundation-visual-guidelines.pdf).
