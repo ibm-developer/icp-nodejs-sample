@@ -2,7 +2,7 @@ FROM ibmcom/ibmnode
 
 ENV NODE_ENV production
 ENV PORT 3000
-ENV USE_ZIPKIN false
+# ENV USE_ZIPKIN
 
 # We'll need this for testing the endpoints with helm test
 RUN apt-get update;
