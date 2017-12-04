@@ -77,7 +77,8 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for all things Node.js - including more samples, tutorials and blog posts. For configuring Node.js itself, consult the official [Node.js community documentation](https://nodejs.org/en/docs/).
 
 ### Deploying on platforms other than x86-64
-- Multiarch images are used so the correct Node.js Docker image will be pulled based on your platform. Supported platforms include ppc64le, x86-64 and s390x.
+- Multiarch images are used so the correct Node.js Docker image will be pulled based on your platform. Supported platforms for this sample include ppc64le, x86-64 and s390x.
+- Note that the IBM Cloud Developer Tools are not available for every platform: consult the [CLI docs](https://www.ibm.com/cloud/cli) to find out more.
 
 ### Disclaimers
 Node.js is an official trademark of Joyent. Images are used according to the Node.js visual guidelines - no copyright claims are made. You can view the guidelines [here](https://nodejs.org/static/documents/foundation-visual-guidelines.pdf).
