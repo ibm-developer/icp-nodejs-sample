@@ -49,9 +49,11 @@ Open your web browser at `http://${SAMPLE_NODE_IP}:${SAMPLE_NODE_PORT}` to view 
 
 If you installed it with `helm install --name tester .` you'd remove the sample with `helm delete --purge tester`. You can find the deployment with `helm list --all` and searching for an entry with the chart name "ibm-nodejs-sample".
 
-## Testing the chart with Helm
-- Run `test-chart.sh` OR
-- Run `helm test sample`: assuming you've deployed it with the release name `sample`.
+## Testing the Chart with Helm
+
+You can programatically run the test in the following ways.
+- `cd chart/ibm-nodejs-sample` then do `./test-chart.sh` OR
+- `helm test sample`: assuming you've deployed it with the release name `sample`.
 
 ## Configuration
 

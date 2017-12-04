@@ -11,7 +11,7 @@ spec:
       # Use the production image
       # image: ibmcom/icp-nodejs-sample:latest
       # Use a testing image
-      image: adamroberts/icp-nodejs-sample-amd64:1.0.0
+      image: adamroberts/icp-nodejs-sample:latest
       # This is installed in the sample, but not in the ibmcom/ibmnode base image
       command: ["wget"]
       args:  ['{{ template "fullname" . }}:{{ .Values.service.port }}/appmetrics-dash']

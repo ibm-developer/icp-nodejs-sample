@@ -4,7 +4,8 @@
 replicaCount: 1
 revisionHistoryLimit: 1
 image:
-  repository: ibmcom/icp-nodejs-sample
+  #repository: ibmcom/icp-nodejs-sample
+  repository: adamroberts/icp-nodejs-sample
   tag: latest
   pullPolicy: Always
 livenessProbe:

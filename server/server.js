@@ -4,7 +4,7 @@
  * US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
 */
 
-if (process.env.USE_ZIPKIN) {
+if (process.env.USE_ZIPKIN == true) {
   console.log("This sample will attempt to send trace data to a Zipkin server")
   var zipkinHost = "localhost"
   var zipkinPort = 9411

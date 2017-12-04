@@ -8,6 +8,6 @@ sleep 10
 
 helm install --name sample .
 
-sleep 10
+sleep 30
 
-helm test --cleanup --debug --timeout 30 sample
+helm test --cleanup --debug --timeout 45 sample

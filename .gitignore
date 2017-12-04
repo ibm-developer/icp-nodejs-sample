@@ -2,5 +2,8 @@ node_modules/
 npm-debug.log
 heapdump*
 config.sh
+config-power.sh
+config-loz.sh
+config-x.sh
 .ibm-project
 *.tgz
