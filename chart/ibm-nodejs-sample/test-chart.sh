@@ -1,3 +1,7 @@
+#!/bin/bash
+
+# Example test script that'll clean up, install the sample, then run the tests
+
 helm delete --purge sample 2> /dev/null
 kubectl delete pod sample-main-endpoint-test 2> /dev/null
 kubectl delete pod sample-metrics-endpoint-test 2> /dev/null
