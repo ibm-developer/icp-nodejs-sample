@@ -15,6 +15,3 @@ spec:
       # This is installed in the sample, but not in the ibmcom/ibmnode base image
       command: ["wget"]
       args:  ['{{ template "fullname" . }}:{{ .Values.service.port }}/metrics']
-      # Uncomment for an intentional failure
-      # args:  ['{{ template "fullname" . }}:13370']
-
