@@ -4,8 +4,10 @@
 replicaCount: 1
 revisionHistoryLimit: 1
 image:
-  #repository: ibmcom/icp-nodejs-sample
-  repository: adamroberts/icp-nodejs-sample
+  # Production image
+  repository: ibmcom/icp-nodejs-sample
+  # One used for testing, replace with your own as required
+  #repository: adamroberts/icp-nodejs-sample
   tag: latest
   pullPolicy: Always
 livenessProbe:
@@ -22,3 +24,4 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
+

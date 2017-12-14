@@ -8,6 +8,6 @@ spec:
   restartPolicy: Never
   containers:
     - name: "{{ .Release.Name }}-metrics-endpoint-test"
-      image: ibmcom/icp-nodejs-sample:latest
+      image: adamroberts/icp-nodejs-sample:latest
       command: ["wget"]
       args:  ['{{ template "fullname" . }}:{{ .Values.service.port }}/metrics']
