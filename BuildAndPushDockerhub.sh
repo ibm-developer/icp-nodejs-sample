@@ -25,6 +25,7 @@ echo "Docker ID is ${DOCKER_ID_USER}"
 sleep 3
 # Uncomment so we can use a functional ID to push to another repository
 
+#docker login -u ibmrt
 docker login -u ${DOCKER_ID_USER}
 
 if [ $? -ne 0 ]; then
