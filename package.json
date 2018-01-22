@@ -9,7 +9,14 @@
   "scripts": {
     "start": "node server/server.js",
     "debug": "node --debug server/server.js",
-    "test": "nyc mocha"
+    "test": "nyc mocha",
+    "build": "npm run build:idt",
+    "idt:build": "node idt.js build",
+    "idt:test": "node idt.js test",
+    "idt:debug": "node idt.js debug",
+    "idt:run": "node idt.js run",
+    "idt:deploy": "node idt.js deploy",
+    "idt:install": "node idt.js install"
   },
   "dependencies": {
     "appmetrics": "^3.0.1",
