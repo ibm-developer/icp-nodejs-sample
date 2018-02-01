@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -ex
 
 # Licensed Materials - Property of IBM
 # (C) Copyright IBM Corp. 2017. All Rights Reserved.
@@ -22,10 +22,10 @@ docker_file=$5
 echo "Image name will be: ${image_name}"
 echo "Image tag will be: ${image_tag}"
 echo "Docker user: ${docker_user}"
-echo "Docker repository: ${repository}"
-echo "File to use: ${file_to_use}"
+echo "Docker repository: ${docker_repository}"
+echo "File to use: ${docker_file}"
 
-docker login -u ${docker_id}
+docker login -u ${docker_user}
 
 if [ $? -ne 0 ]; then
   echo "Didn't login successfully, bailing"; exit;
@@ -38,13 +38,13 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Tagging the Docker image"
-docker tag ${image_name}:${image_tag} ${docker_user}/${image_name}:${image_tag}
+docker tag ${image_name}:${image_tag} ${docker_user}/${docker_repository}/${image_name}:${image_tag}
 if [ $? -ne 0 ]; then
   echo "Didn't tag your image successfully, bailing"; exit;
 fi
 
 echo "Pushing the Docker image"
-docker push ${docker_user}/${image_name}:${image_tag}
+docker push ${docker_user}/${docker_repository}/${image_name}:${image_tag}
 if [ $? -ne 0 ]; then
   echo "Didn't push your image successfully, bailing"; exit;
 fi
