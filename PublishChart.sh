@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! [ $# -eq 3 ] ;  then
-  echo "Requires three parameters: the docker user, the docker repository, the architecture it's for"
+  echo "Requires three parameters: the docker user, the docker repository, the architecture it's for. It'll automatically be tagged for 6 and then 8, using the right Dockerfiles for each build."
   echo "E.g. ./PublishChart.sh ibmrt ibmcom/icp-nodejs-sample amd64"
   exit;
 fi
