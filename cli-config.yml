@@ -13,7 +13,6 @@ container-port-map : "3000:3000"
 container-port-map-debug : "5858:5858"
 
 dockerfile-run : "Dockerfile"
-dockerfile-tools : "Dockerfile-tools"
 
 image-name-run : "nodejs-sample"
 image-name-tools : "nodejs-sample"
