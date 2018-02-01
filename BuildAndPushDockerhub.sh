@@ -32,7 +32,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Building the Docker image"
-docker build -t ${image_name}:${tag} .
+docker build -t ${image_name}:${image_tag} .
 if [ $? -ne 0 ]; then
   echo "Didn't build your application successfully, bailing"; exit;
 fi
