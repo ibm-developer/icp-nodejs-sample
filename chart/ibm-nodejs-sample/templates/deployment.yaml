@@ -17,6 +17,11 @@ spec:
   revisionHistoryLimit: {{ .Values.revisionHistoryLimit }}
   template:
     metadata:
+      # Here's where a user could define their own annotation too
+      annotations:
+        productName: Node.js Sample Application
+        productID: Node.js_Sample_Application_1.3.0_perpetual_00000
+        productVersion: 1.3.0    
       labels:
         app: {{ template "fullname" . }}-selector
     spec:

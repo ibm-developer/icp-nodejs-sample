@@ -1,5 +1,5 @@
 image: adamroberts/icp-nodejs-sample:latest
-
+# Replace with your own name where you'd want to test the sample
 manifests:
   -
     image: adamroberts/icp-nodejs-sample-amd64:latest

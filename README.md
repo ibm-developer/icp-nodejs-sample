@@ -2,7 +2,7 @@
 
 ### This sample is for demonstrative purposes only and is NOT for production use. ###
 
-### For all features to be available this is best viewed in Google Chrome or Safari.
+### For all features to be available this is best viewed in Google Chrome or Safari with client-side JavaScript enabled.
 
 ## Introduction
 This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the application itself is one that makes use of various monitoring capabilities. Note that this sample was produced in early October 2017 and so the code you are provided with by using the generators may differ! The application provided uses the `ibmcom/ibmnode` Docker images.
@@ -24,7 +24,8 @@ The `mycluster.icp` example here should match up with the entry you've added in 
 
 ## Prerequisites
 
-There is only one optional requirement to make the most out of this sample: you should have Prometheus deployed into your IBM Cloud Private cluster where this sample will be installed. This is not a mandatory step and can be done after deployment, happy installing!
+As well as having a Kubernetes cluster you can deploy to (such as Kubernetes included with IBM Cloud Private), you should have Prometheus deployed into your Kubernetes cluster where this sample will be installed. This is not a mandatory step and can be done after deployment.
+Optionally you can set up a Zipkin server (for example, as part of the Microservice Builder Fabric or a standalone Zipkin image), which is where you can configure the sample to use the `appmetrics-zipkin` module, to discover the Zipkin server, and to send its trace data there. This is especially useful for end-to-end tracing of your Node.js deployments and more information should be consulted from the [appmetrics-zipkin Github repository](https://github.com/RuntimeTools/appmetrics-zipkin).
 
 ## Installing the Chart
 
@@ -65,16 +66,16 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 
 | Parameter                  | Description                                     | Default                                                    |
 | -----------------------    | ---------------------------------------------   | ---------------------------------------------------------- |
-| `replicaCount`             | How many pods to deploy                         | 1                                                          |
-| `revisionHistoryLimit`     | Optional field that specifies the number of old ReplicaSets to retain to allow rollback   | 1                |
+| `replicaCount`             | How many pods to deploy                         | `1`                                                          |
+| `revisionHistoryLimit`     | Optional field that specifies the number of old ReplicaSets to retain to allow rollback   | `1`                |
 | `image.repository`         | image repository                                | `ibmcom/icp-nodejs-sample`                                 |
 | `image.tag`                | Image tag                                       | `latest`                                                    |
 | `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
-| `livenessProbe.initialDelaySeconds`   | How long to wait before beginning the checks our pod(s) are up |   30                             |
-| `livenessProbe.periodSeconds`         | The interval at which we'll check if a pod is running OK before being restarted     | 10          |
-| `service.name`             | k8s service name                                | `Node`                                                     |
-| `service.type`             | k8s service type exposing port                  | `NodePort`                                                 |
-| `service.port`             | TCP Port for this service                       | 3000                                                       |
+| `livenessProbe.initialDelaySeconds`   | How long to wait before checking the pod(s) are up |   `30`                             |
+| `livenessProbe.periodSeconds`         | The interval at which we'll check if a pod is running OK before being restarted     | `10`          |
+| `service.name`             | Kubernetes service name                                | `Node`                                                     |
+| `service.type`             | Kubernetes service type for exposing port                  | `NodePort`                                                 |
+| `service.port`             | TCP port for this service                       | `3000`                                                       |
 | `resources.limits.memory`  | Memory resource limits                          | `128m`                                                     |
 | `resources.limits.cpu`     | CPU resource limits                             | `100m`                                                     |
 
@@ -85,6 +86,10 @@ See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for al
 ### Deploying on platforms other than x86-64
 - Multiarch images are used so the correct Node.js Docker image will be pulled based on your platform. Supported platforms for this sample include ppc64le, x86-64 and s390x.
 - Note that the IBM Cloud Developer Tools are not available for every platform: consult the [CLI docs](https://www.ibm.com/cloud/cli) to find out more.
+
+#### Multiple Node.js versions
+- This sample is built on the latest LTS version of Node.js, at the time of the chart's publish.
+- Developers are welcome to bring Node.js 6 and Node.js 8 applications to IBM Cloud Private and can do so by modifying their Dockerfile to pull from the specified tag that corresponds with the desired version.
 
 ### Disclaimers
 Node.js is an official trademark of Joyent. Images are used according to the Node.js visual guidelines - no copyright claims are made. You can view the guidelines [here](https://nodejs.org/static/documents/foundation-visual-guidelines.pdf).

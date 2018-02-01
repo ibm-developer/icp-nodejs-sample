@@ -1,0 +1,7 @@
+ignoreMessages:
+  - ".*Missing required architecture node affinity support"
+  - ".*Parameter is defined but never used in a template: resources.limits.cpu is not used in any template"
+  - ".*Parameter is defined but never used in a template: resources.limits.memory is not used in any template"
+  - ".*Parameter is defined but never used in a template: resources.requests.memory is not used in any template"
+  - ".*Parameter is defined but never used in a template: resources.requests.cpu is not used in any template"
+  - ".*Parameter is defined but never used in a template: service.name is not used in any template"

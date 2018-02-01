@@ -1,6 +1,4 @@
-FROM ibmcom/ibmnode
-# Just add :6 to use the latest 6
-# you can use the community node image as well if you wanted to
+FROM ibmcom/ibmnode:6
 
 ENV NODE_ENV production
 ENV PORT 3000
@@ -23,4 +21,3 @@ COPY . /app
 EXPOSE 3000
 
 ENTRYPOINT ['npm', 'start']
-#CMD ["npm", "start"]
