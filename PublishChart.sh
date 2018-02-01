@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! [ $# -eq 3 ] ;  then
-  echo "Requires three parameters: the docker user, the docker repository, the architecture it's for
+  echo "Requires three parameters: the docker user, the docker repository, the architecture it's for"
   echo "E.g. ./PublishChart.sh ibmrt ibmcom/icp-nodejs-sample amd64"
   exit;
 fi
@@ -17,6 +17,5 @@ arch=$3
 
 # e.g. ./BuildAndPushDockerhub.sh icp-nodejs-sample-amd64 1.0.0 ibmcom yourusername docker-6/Dockerfile"
 
-./BuildAndPushDockerhub.sh icp-nodejs-sample-$arch 6 ibmcom ${1} ${2} docker-6/Dockerfile
-./BuildAndPushDockerhub.sh icp-nodejs-sample-$arch 8 ibmcom ${1} ${2} docker-8/Dockerfile
-
+./BuildAndPushDockerhub.sh icp-nodejs-sample-$arch 6 $docker_repo $docker_user docker-6/Dockerfile
+./BuildAndPushDockerhub.sh icp-nodejs-sample-$arch 8 $docker_repo $docker_user docker-8/Dockerfile
