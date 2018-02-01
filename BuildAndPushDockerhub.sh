@@ -4,47 +4,54 @@
 # (C) Copyright IBM Corp. 2017. All Rights Reserved.
 # US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
 
-if ! [ $# -eq 5 ] ;  then
-  echo "Requires five parameters: the image name you want, the tag you want, the Docker repository to push to, the username to push it as, and the Dockerfile location"
-  echo "E.g. ./BuildAndPushDockerhub.sh icp-nodejs-sample-amd64 1.0.0 ibmcom yourusername docker-6/Dockerfile"
+if ! [ $# -eq 4 ] ;  then
+  echo "Requires four parameters: the image name you want, the tag you want, the Dockerhub ID, the repository name, the Dockerfile to use."
+  echo "E.g. ./BuildAndPushDockerhub.sh icp-nodejs-sample-amd64 1.0.0 ibmcom docker-6/Dockerfile"
   exit;
 fi
 
-echo "Warning, this will push to the desired location (e.g. on public Dockerhub!) after authenticating, pausing for five seconds, ensure this is really what you want to do first..."
+docker rmi -f ibmcom/ibmnode
+docker rmi -f node
+
+echo "WARNING: THIS WILL PUSH TO DOCKERHUB after authenticating, pausing for five seconds first."
 sleep 5
 
 image_name=$1
-image_tag=$2
-docker_repository=$3
-docker_user=$4
-docker_file=$5
+tag=$2
+docker_id_user=$3
+file_to_use=$4
 
-echo "Image name will be: ${image_name}"
-echo "Image tag will be: ${image_tag}"
-echo "Docker user: ${docker_user}"
-echo "Docker repository: ${docker_repository}"
-echo "File to use: ${docker_file}"
+echo "Image name is: ${image_name}"
+echo "Tag is: ${tag}"
+echo "Docker ID is ${docker_id_user}"
+echo "File to use is: ${file_to_use}"
 
-docker login -u ${docker_user}
+if [[ ${docker_id_user} == "ibmcom" ]] ; then
+  echo "Using ibmrt ID"
+  docker login -u ibmrt
+else
+  docker login -u ${docker_id_user}
+fi
 
 if [ $? -ne 0 ]; then
   echo "Didn't login successfully, bailing"; exit;
 fi
 
-echo "Building the Docker image"
-docker build -t ${image_name}:${image_tag} .
+echo "Docker building..."
+docker build -f ${file_to_use} -t ${image_name}:${tag} .
+
 if [ $? -ne 0 ]; then
   echo "Didn't build your application successfully, bailing"; exit;
 fi
 
-echo "Tagging the Docker image"
-docker tag ${image_name}:${image_tag} ${docker_user}/${docker_repository}/${image_name}:${image_tag}
+echo "Docker tagging..."
+docker tag ${image_name}:${tag} ${docker_id_user}/${image_name}:${tag}
 if [ $? -ne 0 ]; then
   echo "Didn't tag your image successfully, bailing"; exit;
 fi
 
-echo "Pushing the Docker image"
-docker push ${docker_user}/${docker_repository}/${image_name}:${image_tag}
+echo "Docker pushing..."
+docker push ${docker_id_user}/${image_name}:${tag}
 if [ $? -ne 0 ]; then
   echo "Didn't push your image successfully, bailing"; exit;
 fi
