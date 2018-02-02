@@ -14,6 +14,7 @@ WORKDIR "/app"
 # Install app dependencies
 COPY package.json /app/
 RUN cd /app;
+RUN rm -rf ./node_modules;
 RUN npm install;
 
 # Bundle app source

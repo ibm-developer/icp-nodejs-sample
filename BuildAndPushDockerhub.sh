@@ -10,8 +10,10 @@ if ! [ $# -eq 4 ] ;  then
   exit;
 fi
 
-docker rmi -f ibmcom/ibmnode
-docker rmi -f node
+echo "Cleaning up: removing any existing Node.js image..."
+docker rmi -f ibmcom/ibmnode > /dev/null 2>&1
+docker rmi -f node > /dev/null 2>&1
+rm -rf ./node_modules
 
 echo "WARNING: THIS WILL PUSH TO DOCKERHUB after authenticating, pausing for five seconds first."
 sleep 5
