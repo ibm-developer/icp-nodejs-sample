@@ -1,0 +1,18 @@
+image: ibmcom/icp-nodejs-sample:6
+
+manifests:
+  -
+    image: ibmcom/icp-nodejs-sample-amd64:6
+    platform:
+      os: linux
+      architecture: amd64
+  -
+    image: ibmcom/icp-nodejs-sample-ppc64le:6
+    platform:
+      os: linux
+      architecture: ppc64le
+  -
+    image: ibmcom/icp-nodejs-sample-s390x:6
+    platform:
+      os: linux
+      architecture: s390x

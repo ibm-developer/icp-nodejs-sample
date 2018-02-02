@@ -4,8 +4,12 @@
 
 ### For all features to be available this is best viewed in Google Chrome or Safari with client-side JavaScript enabled.
 
+### Image scan results
+Be aware that, as with anything you deploy using Docker, this image may become vulnerable over time; as can your applications!
+it's your responsibility to ensure your images are free of problems: Dockerhub and various IBM offerings including the IBM Container Service allow for on-demand image scanning.
+
 ## Introduction
-This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the application itself is one that makes use of various monitoring capabilities. Note that this sample was produced in early October 2017 and so the code you are provided with by using the generators may differ! The application provided uses the `ibmcom/ibmnode` Docker images.
+This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the application itself is one that makes use of various monitoring capabilities. Note that this sample was produced in early October 2017 and so the code you are provided with by using the generators may differ! The application provided uses the node Docker images.
 
 This sample was created using `idt create` with the following choices:
 - Web App
@@ -88,8 +92,8 @@ See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for al
 - Note that the IBM Cloud Developer Tools are not available for every platform: consult the [CLI docs](https://www.ibm.com/cloud/cli) to find out more.
 
 #### Multiple Node.js versions
-- This sample is built on the latest LTS version of Node.js, at the time of the chart's publish.
-- Developers are welcome to bring Node.js 6 and Node.js 8 applications to IBM Cloud Private and can do so by modifying their Dockerfile to pull from the specified tag that corresponds with the desired version.
+- This sample is built on the latest LTS version of Node.js.
+- Developers are welcome to bring Node.js LTS release applications to IBM Cloud Private and can do so by modifying their Dockerfile to pull from the specified tag that corresponds with the desired version.
 
 ### Disclaimers
 Node.js is an official trademark of Joyent. Images are used according to the Node.js visual guidelines - no copyright claims are made. You can view the guidelines [here](https://nodejs.org/static/documents/foundation-visual-guidelines.pdf).

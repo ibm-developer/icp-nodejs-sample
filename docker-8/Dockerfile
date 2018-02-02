@@ -1,4 +1,4 @@
-FROM ibmcom/ibmnode:8
+FROM node:8
 
 ENV NODE_ENV production
 ENV PORT 3000
