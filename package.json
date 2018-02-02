@@ -1,7 +1,7 @@
 {
   "name": "nodejs-sample",
   "version": "1.0.0",
-  "description": "A generated Bluemix application",
+  "description": "A generated IBM Cloud application",
   "private": true,
   "engines": {
     "node": "^6.9.0"
