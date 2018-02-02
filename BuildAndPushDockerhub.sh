@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash
 
 # Licensed Materials - Property of IBM
 # (C) Copyright IBM Corp. 2017. All Rights Reserved.
