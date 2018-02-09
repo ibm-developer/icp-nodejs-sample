@@ -1,5 +1,5 @@
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2017. All Rights Reserved.
+# (C) Copyright IBM Corp. 2018. All Rights Reserved.
 # US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -39,7 +39,8 @@ spec:
           - name: PORT
             value : "{{ .Values.service.port }}"
       # Uncomment if you want to restrict which workers the deployment will go to
-      #nodeSelector:
-        #beta.kubernetes.io/arch: amd64
-        #beta.kubernetes.io/arch: s390x
-        #beta.kubernetes.io/arch: ppc64le
+      # this is only really important if you're not building multi-arch Docker images to use
+      # nodeSelector:
+        # beta.kubernetes.io/arch: amd64
+        # beta.kubernetes.io/arch: s390x
+        # beta.kubernetes.io/arch: ppc64le
