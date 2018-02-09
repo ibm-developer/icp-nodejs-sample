@@ -95,6 +95,13 @@ See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for al
 - This sample is built on the latest LTS version of Node.js.
 - Developers are welcome to bring Node.js LTS release applications to IBM Cloud Private and can do so by modifying their Dockerfile to pull from the specified tag that corresponds with the desired version.
 
+#### Logging
+This sample involves printing to the standard output stream via the provided `console.log` method in Node.js: as you would with your own deployed Node.js applications. 
+You can view these logs in the IBM Cloud Private web UI for this particular deployment and also by using the built-in logging service of IBM Cloud Private itself. One example would be to use Kibana to check what the "log" field contains for anything that comes from logstash. For more information consult the [IBM Cloud Private logging docs](https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0/manage_metrics/logging_elk.html).
+
+#### Metering
+This sample involves metering as defined in the `chart/ibm-nodejs-sample/templates/deployment.yaml` file. You can view the details of any deployment that features metering by using the IBM Cloud Private web UI: it provides a simple way to track what has been deployed into your environment.
+
 ### Disclaimers
 Node.js is an official trademark of Joyent. Images are used according to the Node.js visual guidelines - no copyright claims are made. You can view the guidelines [here](https://nodejs.org/static/documents/foundation-visual-guidelines.pdf).
 
