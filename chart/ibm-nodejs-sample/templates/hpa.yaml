@@ -20,9 +20,15 @@ metadata:
 spec:
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
+
+  metrics: 
+  - type: Resource
+    resource: 
+      name: cpu
+      targetAverageUtilization: {{ .Values.autoscaling.metrics.cpu.targetAverageUtilization }}
+
   scaleTargetRef:
     apiVersion: extensions/v1beta1
     kind: Deployment
     name: {{ template "fullname" . }}
-  targetCPUUtilizationPercentage: {{ .Values.autoscaling.targetCPUUtilizationPercentage }}
 {{- end }}

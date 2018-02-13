@@ -1,5 +1,4 @@
-# This is a copy of docker-8/Dockerfile.
-FROM node:8
+FROM ibmcom/ibmnode:8
 
 ENV NODE_ENV production
 ENV PORT 3000

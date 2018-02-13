@@ -32,6 +32,4 @@ autoscaling:
   maxReplicas: 2
   metrics:
     cpu:
-      targetAverageUtilization: 70
-    memory:
-      targetAverageUtilization: 70
+      targetAverageUtilization: 100m
