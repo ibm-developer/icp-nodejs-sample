@@ -17,7 +17,7 @@ image:
   tag:
     __metadata:
       name: "tag"
-      label "Docker image tag to use"
+      label: "Docker image tag to use"
       description: "Determines the Node.js version."
       options: 
         label: "6"
