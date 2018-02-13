@@ -9,25 +9,29 @@ image:
     __metadata:
       name: "Repository"
       label: "Docker Repository"
-      description: "Docker registry to pull image from."
+      description: "Docker repository to pull image from."
       type: "string"
-      immutable: "false"
+      immutable: true
       required: true
+
+  tag:
+    __metadata:
+      name: "tag"
+      label "Docker image tag to use"
+      description: "Determines the Node.js version."
+      options: 
+        label: "6"
+        value: "6"
+        label: "8"
+        value: "8"
+
   pullPolicy:
     __metadata:
       name: "pullPolicy"
       label: "Docker image pull policy"
-      description: "Always, Never, or IfNotPresent. Defaults to IfNotPresent"
       type: "string"
-      immutable: "false"
+      immutable: "true"
       required: true
-      options:
-      - label: "IfNotPresent"
-        value: "IfNotPresent"
-      - label: "Always"
-        value: "Always"
-      - label: "Never"
-        value: "Never"
 
 ## Service configuration metadata
 service:
@@ -37,7 +41,7 @@ service:
     __metadata:
       name: "Name"
       label: "Service Name"
-      description: "This is the Service Name"
+      description: "This is the Kubernetes service name: it must be letters and/or text for this sample."
       type: "string"
       immutable: "false"
       required: true
@@ -46,12 +50,20 @@ service:
     __metadata:
       name: "Type"
       label: "Service Type"
-      description: "This is the Service Type"
+      description: "This is the Kubernetes service type: choose ClusterIP to only have the deployed sample accessible inside of your cluster, or via port forwarding. NodePort should be used if you want anyone who can access this IBM Cloud Private instance to view the application."
       type: "string"
       immutable: "false"
       required: true
       options:
-        - label: "Cluster IP"
-          value: "ClusterIP"
         - label: "Node Port"
           value: "NodePort"
+          value: "ClusterIP"
+        - label: "Cluster IP"
+  port:
+    __metadata:
+      name: "Port"
+      label: "Port"
+      description: "This is the port for the service and must match the Node.js listen server port number and what is exposed in the Dockerfile."
+      type: "string"
+      immutable: "true"
+      required: true
