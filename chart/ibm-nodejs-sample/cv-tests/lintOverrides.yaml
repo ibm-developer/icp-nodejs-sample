@@ -5,3 +5,6 @@ ignoreMessages:
   - ".*Parameter is defined but never used in a template: resources.requests.memory is not used in any template"
   - ".*Parameter is defined but never used in a template: resources.requests.cpu is not used in any template"
   - ".*Parameter is defined but never used in a template: service.name is not used in any template"
+  - ".*Parameter is defined but never used in a template: service.name is not used in any template"
+  - ".*Incorrect suffix for cpu value"
+  - ".*Missing label: metadata.labels.* not found in ibm-nodejs-sample/templates/tests*"

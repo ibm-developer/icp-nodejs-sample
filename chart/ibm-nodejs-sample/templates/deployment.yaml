@@ -12,9 +12,8 @@ metadata:
     heritage: "{{ .Release.Service }}"
 spec:
   {{ if not .Values.autoscaling.enabled -}}
-  replicas: {{ .Values.replicaCount }}
+  replicas: 1
   {{- end }}
-  revisionHistoryLimit: {{ .Values.revisionHistoryLimit }}
   template:
     metadata:
       # Here's where a user could define their own annotation too

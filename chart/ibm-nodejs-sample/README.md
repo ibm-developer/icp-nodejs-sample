@@ -2,25 +2,19 @@
 
 ### This sample is for demonstrative purposes only and is NOT for production use. ###
 
-### For all features to be available this is best viewed in Google Chrome or Safari.
+### For all features to be available the sample application is best viewed in Google Chrome or Safari.
 
 ## Introduction
-This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the application itself is one that makes use of various monitoring capabilities. Note that this sample was produced in early October 2017 and so the code you are provided with by using the generators may differ! The application provided uses the `ibmcom/ibmnode` Docker images.
+This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the 
+application itself is one that can make use of various monitoring capabilities.
 
-This sample was created using `idt create` with the following choices:
-- Web App
-- Basic Web
-- Node
-
-Modifications were then made to use EJS, to add a gulp task, and to add the content. The stylesheet provided is largely based on the [Node.js @ IBM developer center](https://developer.ibm.com/node).
+This sample was created using `idt create` and more information can be found within the application itself.
 
 - This example uses [appmetrics](https://github.com/RuntimeTools/appmetrics) and [appmetrics-dash](https://github.com/RuntimeTools/appmetrics-dash): the endpoint being `/appmetrics-dash`.
 - This example features the "scrape" annotation in the `<chart directory>/templates/service.yaml` file. In combination with the [appmetrics-prometheus](https://github.com/RuntimeTools/appmetrics-prometheus) module inclusion and usage, this enables the sample to be automatically scraped by a deployed instance of Prometheus in order for metrics to be gathered and displayed using the Prometheus web UI. You can view the raw data that will be available to Prometheus at the `/metrics` endpoint.
 This allows developers to quickly determine how the application is performing across potentially many Kubernetes pods.
 - This example uses [appmetrics-zipkin](https://github.com/RuntimeTools/appmetrics-zipkin). If Zipkin is deployed (e.g. with the Microservice Builder fabric), trace information will be available under the service name "icp-nodejs-sample". To enable this feature, modify `Dockerfile` and set `USE_ZIPKIN`. You can dynamically modify applications as well using the IBM CLoud Private web UI - this includes the setting of environment variables and it's recommended you restart the pod for the change to take effect.
-- This example can be deployed using the IBM Cloud Developer Tools, for example: `idt deploy -t container --deploy-image-target mycluster.icp:8500/default/nodejs-sample`.
-
-The `mycluster.icp` example here should match up with the entry you've added in `/etc/hosts`: it is the location of the private registry.
+- This example can be deployed using the IBM Cloud Developer Tools.
 
 ## Prerequisites
 
@@ -61,8 +55,6 @@ The following table lists the configurable parameters of the ibm-nodejs-sample c
 
 | Parameter                  | Description                                     | Default                                                    |
 | -----------------------    | ---------------------------------------------   | ---------------------------------------------------------- |
-| `replicaCount`             | How many pods to deploy                         | 1                                                          |
-| `revisionHistoryLimit`     | Optional field that specifies the number of old ReplicaSets to retain to allow rollback   | 1                |
 | `image.repository`         | image repository                                | `ibmcom/icp-nodejs-sample`                                 |
 | `image.tag`                | Image tag                                       | `latest`                                                    |
 | `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |

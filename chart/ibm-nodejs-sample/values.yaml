@@ -2,9 +2,6 @@
 # (C) Copyright IBM Corp. 2018. All Rights Reserved.
 # US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
 
-replicaCount: 1
-
-revisionHistoryLimit: 1
 image:
   # Production image
   repository: ibmcom/icp-nodejs-sample
@@ -15,6 +12,7 @@ image:
 livenessProbe:
   initialDelaySeconds: 30
   periodSeconds: 10
+# This is important as the port must match what's in the Dockerfile and the listen server port
 service:
   name: Node
   type: NodePort
