@@ -2,11 +2,8 @@
 
 ### This sample is for demonstrative purposes only and is NOT for production use. ###
 
-### For all features to be available the sample application is best viewed in Google Chrome or Safari.
-
 ## Introduction
-This sample application is intended to guide you through the process of deploying your own Node.js applications into IBM Cloud Private. Useful links and examples are provided and the 
-application itself is one that can make use of various monitoring capabilities.
+This Helm Chart deploys a sample Node.js web application hosting its own documentation which guides you through the process of creating and deploying your own Node.js applications into IBM Cloud Private.
 
 This sample was created using `idt create` and more information can be found within the application itself.
 
@@ -24,15 +21,16 @@ There is only one optional requirement to make the most out of this sample: you 
 
 The Helm chart can be installed from the app center by finding the nodejs-sample and following the installation steps.
 
-The Helm chart can also be installed with the following command from the directory containing `Chart.yaml`:
+If you prefer to use the command line instead, run the following command from the directory containing `Chart.yaml`:
 
-`helm install --name tester .` where tester can be anything.
+`helm install --name tester .` where tester can be anything: this is the desired  name of the release so it won't be an automatically generated one.
 
 You can find more information about deployment methods in the [IBM Cloud Private documentation](https://www.ibm.com/support/knowledgecenter/SSBS6K/product_welcome_cloud_private.html).
 
 ## Verifying the Chart
-You can view the deployed sample in your web browser. To retrieve the IP and port:
+You can view the deployed sample in your web browser, for all features to be available the sample application is best viewed in Google Chrome or Safari.
 
+To retrieve the IP and port of this deployed application:
 `export SAMPLE_NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")`
 
 `export SAMPLE_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "fullname" . }})`
@@ -47,7 +45,7 @@ If you installed it with `helm install --name tester .` you'd remove the sample 
 
 You can programatically run the test in the following ways.
 - `cd chart/ibm-nodejs-sample` then do `./test-chart.sh` OR
-- `helm test sample`: assuming you've deployed it with the release name `sample`.
+- `helm test tester`: assuming you've deployed it with the release name `sample`.
 
 ## Configuration
 
@@ -77,4 +75,4 @@ See the [Node.js @ IBM developer center](https://developer.ibm.com/node/) for al
 ### Disclaimers
 Node.js is an official trademark of Joyent. Images are used according to the Node.js visual guidelines - no copyright claims are made. You can view the guidelines [here](https://nodejs.org/static/documents/foundation-visual-guidelines.pdf).
 
-This icp-nodejs-sample is not formally related to or endorsed by the official Node.js open source or commercial project.
+This sample is not formally related to or endorsed by the official Node.js open source or commercial project.
