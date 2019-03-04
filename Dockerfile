@@ -1,4 +1,4 @@
-FROM node:8-stretch
+FROM node:10-stretch
 
 ENV NODE_ENV production
 ENV PORT 3000

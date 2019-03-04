@@ -7,4 +7,4 @@
 
 image:
   repository: ibmcom/icp-nodejs-sample
-  tag: 6
+  tag: 8

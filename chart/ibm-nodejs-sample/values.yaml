@@ -6,8 +6,8 @@ image:
   # Production image
   repository: ibmcom/icp-nodejs-sample
   tag: latest
-  # tag: 6
   # tag: 8
+  # tag: 10
   pullPolicy: Always
 livenessProbe:
   initialDelaySeconds: 30

@@ -1,18 +1,18 @@
-image: adamroberts/icp-nodejs-sample:latest
+image: <DockerHubName>/icp-nodejs-sample:latest
 # Replace with your own name where you'd want to test the sample
 manifests:
   -
-    image: adamroberts/icp-nodejs-sample-amd64:latest
+    image: <DockerHubName>/icp-nodejs-sample-amd64:latest
     platform:
       os: linux
       architecture: amd64
   -
-    image: adamroberts/icp-nodejs-sample-ppc64le:latest
+    image: <DockerHubName>/icp-nodejs-sample-ppc64le:latest
     platform:
       os: linux
       architecture: ppc64le
   -
-    image: adamroberts/icp-nodejs-sample-s390x:latest
+    image: <DockerHubName>/icp-nodejs-sample-s390x:latest
     platform:
       os: linux
       architecture: s390x

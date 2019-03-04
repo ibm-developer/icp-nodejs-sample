@@ -1,18 +1,18 @@
-image: ibmcom/icp-nodejs-sample:6
+image: ibmcom/icp-nodejs-sample:10
 
 manifests:
   -
-    image: ibmcom/icp-nodejs-sample-amd64:6
+    image: ibmcom/icp-nodejs-sample-amd64:10
     platform:
       os: linux
       architecture: amd64
   -
-    image: ibmcom/icp-nodejs-sample-ppc64le:6
+    image: ibmcom/icp-nodejs-sample-ppc64le:10
     platform:
       os: linux
       architecture: ppc64le
   -
-    image: ibmcom/icp-nodejs-sample-s390x:6
+    image: ibmcom/icp-nodejs-sample-s390x:10
     platform:
       os: linux
       architecture: s390x
